@@ -37,4 +37,4 @@ Since organizations and in fact most of the people expect stability and certaint
 But how do we know what to do ?
 One thing people suggest is keep trying things and we may find something that we feel strongly that such a thing should exist in this world. The more we try, the more we have chances of developing independent and objective thinking.
 
-In order be a bot free, be humble, open minded, 100 % accountable for yourself and most improtantly, remove references implying not to take any action, with the sole purpose of impressing others.
+In order to be free, be humble, open minded, 100 % accountable for yourself and most improtantly, remove references implying not to take any action, with the sole purpose of impressing others. Take actions , which puts you in position, where you can do some active work knowing what you are doing and most improtantly why you are doing.
