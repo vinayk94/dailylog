@@ -29,3 +29,27 @@ p, li, .footer {
   line-height: 1.6; /* Increases line height for better readability */
   margin-bottom: 1rem; /* Adds space below paragraphs and list items */
 }
+
+/* Container for navigation links */
+.navigation {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right */
+  padding: 10px; /* Adjust as needed */
+}
+
+/* Style for each navigation link */
+.nav-link {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 10px; /* Space between links */
+  background-color: #0078D7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #0056a3;
+}
+
