@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Home
-permalink: /home/
 ---
 
 <!DOCTYPE html>
@@ -15,8 +14,8 @@ permalink: /home/
 <body>
   <!-- Navigation Section -->
   <div class="navigation">
-    <a href="{{ '/about.html' | prepend: site.baseurl | escape }}" class="nav-link">About</a>
-    <a href="{{ '/posts.html' | prepend: site.baseurl | escape }}" class="nav-link">Posts</a>
+    <a href="{{ site.baseurl }}/about.html" class="nav-link">About</a>
+    <a href="{{ site.baseurl }}/posts.html" class="nav-link">Posts</a>    
   </div>
   
 
