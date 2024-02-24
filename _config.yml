@@ -1,6 +1,7 @@
 theme: jekyll-theme-minimal
 permalink: /journal/:year/:month/:day/:title/
 author: Vinay
+url: "https://vinayk94.github.io/"
 baseurl: "/dailylog"
 
 plugins:
