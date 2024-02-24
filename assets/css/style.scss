@@ -3,14 +3,29 @@
 
 @import "{{ site.theme }}";
 body {
-  background-color: #1e1e1e;
-  color: #d4d4d4;
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark grey text for better readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333333; /* Dark grey for headings */
 }
 
 a {
-  color: #3794ff;
+  color: #0066cc; /* Standard link color */
+  text-decoration: none; /* Removes underline from links */
 }
 
 a:hover {
-  color: #9cdcfe;
+  color: #0055a3; /* Slightly darker blue for link hover state */
+}
+
+hr {
+  border-top: 1px solid #eeeeee; /* Light horizontal rule */
+}
+
+/* Additional styles for better contrast and spacing */
+p, li, .footer {
+  line-height: 1.6; /* Increases line height for better readability */
+  margin-bottom: 1rem; /* Adds space below paragraphs and list items */
 }
