@@ -2,6 +2,7 @@
 layout: post
 title: "Living without reference"
 date: 2024-02-24
+author: Vinay
 ---
 
 How do I avoid being trapped ?
