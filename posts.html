@@ -16,7 +16,6 @@ permalink: /posts/
     <h1>All Journal Entries</h1>
 
     <ul>
-        <!--{% for post in paginator.posts %}-->
         {% for post in site.posts %}
             <li>
                 <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
