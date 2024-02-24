@@ -37,12 +37,12 @@ Truths that I have learnt about myself.
 
 Now, given these constraints what should we do, if we have to avoid being trapped.
 We need to work on something, which hasnt been done before to avoid living a prescriptive life.
-Since organizations and in fact most of the people expect stability and certainty, we need to make something of our own away from everyone.
+Since organizations and in fact most of the people expect stability and certainty, we need to make something of our own, away from the conventional people.
 
 But how do we know what to do ?
-One thing people suggest is keep trying things and we may find something that we feel strongly that such a thing should exist in this world. The more we try, the more we have chances of developing independent and objective thinking.
+One thing people suggest is keep trying things and we may find something that we feel strongly that such a thing should exist in this world. The more we try, the more we have chances of developing independent and objective thinking and thus we increase our probability of knowing what we can do.
 
-In order to be free, be humble, open minded, 100 % accountable for yourself and most improtantly, remove references implying not to take any action, with the sole purpose of impressing others. Take actions , which puts you in position, where you can do some active work knowing what you are doing and most improtantly why you are doing.
+In order to be free, be humble, open minded, 100 % accountable for yourself and of all, remove references implying not to take any action, with the sole purpose of impressing others or to get something in return, while not being upfront about it. Take actions , which puts you in position, where you can do some active work knowing what you are doing and most importantly why you are doing.
 
 * Ideally, it should be applicable everywhere
 * Something, you can work on defying all other odds
