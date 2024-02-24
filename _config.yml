@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 permalink: /journal/:year/:month/:day/:title/
 author: Vinay
-baseurl: "/dailylog"
+#baseurl: "/dailylog"
 
 gems:
   - jekyll-paginate
