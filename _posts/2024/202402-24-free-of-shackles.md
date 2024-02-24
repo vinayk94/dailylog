@@ -1,3 +1,9 @@
+---
+layout: page
+title: "Living without reference"
+date: 2024-02-24
+permalink: /journal/my-journal-entry/
+---
 
 How do I avoid being trapped ?
 How do I avoid feeling not doing enough or this feeling of having something still to be done ?
