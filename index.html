@@ -10,7 +10,14 @@ title: Home
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
 </head>
+
 <body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <a href="{{ '/about.html' | prepend: site.baseurl | escape }}" class="nav-link">About</a>
+    <a href="{{ '/posts.html' | prepend: site.baseurl | escape }}" class="nav-link">Posts</a>
+  </div>
+  
 
     <h1>Welcome to My Daily Journal</h1>
 

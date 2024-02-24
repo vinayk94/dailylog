@@ -1,7 +1,8 @@
 ---
-layout: page
+layout: post
 title: "Experiences here"
 date: 2024-02-20
+permalink: /journal/my-journal-entry/
 ---
 
 

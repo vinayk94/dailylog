@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Living without reference"
 date: 2024-02-24
 permalink: /journal/my-journal-entry/
