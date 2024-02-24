@@ -1,0 +1,29 @@
+---
+layout: default
+title: All Posts
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Posts</title>
+</head>
+<body>
+
+    <h1>All Journal Entries</h1>
+
+    <ul>
+        {% for post in site.posts %}
+            <li>
+                <a href="{{ post.url | prepend: site.baseurl | escape }}">{{ post.title }}</a>
+                - {{ post.date | date: "%B %d, %Y" }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="{{ '/' | prepend: site.baseurl | escape }}">Back to Home</a>
+
+</body>
+</html>
