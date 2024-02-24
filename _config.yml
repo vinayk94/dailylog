@@ -1,3 +1,11 @@
 theme: jekyll-theme-minimal
 permalink: /journal/:year/:month/:day/:title/
 author: Vinay
+baseurl: "/dailylog"
+
+gems:
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/posts/page:num/"
+

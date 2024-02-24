@@ -23,5 +23,5 @@ Also, these people in the early 20's are the ones, who I observed to have this s
 
 Is it their inability to put some effort into understanding the world around them, that is pushing them to close their eyes and blindly follow others? 
 
-I think writing helps me to be honest at least with me. Produce more while being honest with oneself. Honesty leads you to the truth and acting on via production helps you evolve.
+I think writing helps me to be honest at least with me. Produce more while being honest with oneself. Honesty leads you to the truth and acting on it via production helps you move with a pinch of confidence..
 

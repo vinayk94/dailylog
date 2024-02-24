@@ -53,3 +53,15 @@ p, li, .footer {
   background-color: #0056a3;
 }
 
+@media (max-width: 600px) {
+  .navigation {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .nav-link {
+      margin-top: 10px;
+  }
+}
+
+
