@@ -64,4 +64,15 @@ p, li, .footer {
   }
 }
 
+.fixed-quote {
+  position: fixed;
+  top: 0;
+  right: 0; // Aligns the quote to the top right
+  background-color: white; // Or any other color you want
+  padding: 10px;
+  z-index: 1000; // Ensures it stays above other content
+  font-style: italic; // Makes the text italicized
+}
+
+
 
