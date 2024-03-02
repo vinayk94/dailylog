@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "LWhat pushes one to desparate actions"
+title: "What pushes one to desparate actions ?"
 date: 2024-02-24
 ---
 
