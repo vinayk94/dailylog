@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Letter to myself - work"
-date: 2024-03-02
+date: 2024-03-03
 ---
 
 ![Image depicting a moment of mentorship between the same individual at different career stages](/dailylog/assets/images/to_younger_self.jpeg)
