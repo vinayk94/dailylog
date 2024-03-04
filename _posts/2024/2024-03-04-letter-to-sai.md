@@ -41,7 +41,7 @@ Forget what you are till now, start a new life. <br>
 * Lesser stupid pressures + your belief in working harder lead to a useful life, where you feel that you can and have produced something in this world.
 
 
-**One should never limit oneself due to the expectations that the society or themselves imposed on them. Its the biggest harm that one does to themself by believing that these limits are real.**
+**One should never limit oneself due to the expectations imposed by the society or themselves. Its the biggest harm that one does to themself by believing that these limits are real.**
 
 PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR <br>
 AND ITS TIME TO TRULY ANSWER YOURSELF, WHAT YOU CAN DO IN THIS WORLD. <br>
