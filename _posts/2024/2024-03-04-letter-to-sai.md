@@ -43,7 +43,7 @@ Forget what you are till now, start a new life. <br>
 
 **One should never limit oneself due to the expectations imposed by the society or themselves. Its the biggest harm that one does to themself by believing that these limits are real.**
 
-PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR <br>
+PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR. <br>
 AND ITS TIME TO TRULY ANSWER YOURSELF, WHAT YOU CAN DO IN THIS WORLD. <br>
 I DONT KNOW IF EMOTIONS ARE REAL THESEDAYS, BUT ATLEAST, WORK IS REAL AND EFFECTIVE IN THE LONG TERM. WHAT YOU DO IS REAL.
 
