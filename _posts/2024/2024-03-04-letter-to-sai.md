@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Letter to Sai - work"
+date: 2024-03-03
+---
+
+Dear Sai,
+
+Till now, you have done jobs in fear.<br>
+Till now, you have done jobs for the sake of doing it. <br>
+But, please take this as a chance to redeem yourself. <br>
+Forget what you are till now, start a new life. <br>
+
+### Dont's
+* Do not complain and do not indulge in any blame games. 
+    * Most often we blame others (unless its true), just to avoid working, The less you blame others for your situation, the more you would want to work on the problem yourself. And that's the best way to handle things.
+    * Complaining less makes you a better asset to anyone.
+    * Even in personal life, by complaining less about others, we will gather the courage to face truth about ourselves.
+* Do not enter into any venture with fear. Fear kills your thought.
+
+    - Take this as an opportunity to work without fear, in fact, work to produce something of value to others.
+    - You should be open minded. Understand that there will always be things that are unknown, but you can only reduce unknowns by working. **Remember action produces information.**
+
+* Do not take up any job or any work as means to escape from something. 
+    - Do not develop the habit of runnning away from things. The things that you didnt do, but had the chance to do, will haunt you no matter where you go.
+    - If you are not doing something, always ask yourself the question, "is it because you are being afraid of it ? or you do not have the skills currently or some other reasons". We live in a world of information abundance, with right tools in hand, and with a will to work, we can do anything.
+    - If you are running away from something, then you have already set your limits and your life will be within these bounds.
+
+
+* Do not put yourself in the position of being chased. Most often we are chased because we didnt deliver on time.
+    * Do not postpone anything.
+    * **Work with an extreme sense of urgency, irrespective of the kind of work. Put in any amount of hard work to complete things. Complete things, so that you can move on to the next experience** 
+* **Do not believe in free lunch, work everyday to create another better day.**
+
+
+### Do's
+* The more you work, the more you experience.
+* The more you experience, the more is your immunity to the fear of unknown.
+* The more you become fearless, the more you get things done.
+* The more you get things done, the more you wont get chased.
+* The less you feel chased, the less you feel pressured in daily life. (Most pressures are the illusions that we build in our own mind)
+* Lesser stupid pressures + your belief in working harder leads to a useful life, where you feel that you can and have produced something in this world.
+
+
+**One should never limit oneself due to the expectations that the society or themselves imposed on them. Its the biggest harm that one does to themself by believing that these limits are real.**
+
+-----------------**PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR**-----------------
+-----------------**AND ITS TIME TO KNOW, WHAT YOU ARE CAPABLE OF, IN THIS WORLD**-----------------
+
+<br>
+<br>
+Best,<br>
+Vinay
