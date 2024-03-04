@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Letter to Sai - work"
-date: 2024-03-04
+date: 2024-03-03
 ---
 
 Dear Sai,
@@ -38,14 +38,14 @@ Forget what you are till now, start a new life. <br>
 * The more you experience, the more your immunity to the fear of the unknown.
 * The more you become fearless, the more you get things done.
 * The more you get things done, the more you won't get chased.
-* The less you feel chased, the less you feel pressured in daily life. (Most pressures are the illusions that we build in our mind)
+* The less you feel chased, the less you feel pressured in daily life. (Most pressures are the illusions that we build in our minds)
 * Lesser stupid pressures + your belief in working harder lead to a useful life, where you feel that you can and have produced something in this world.
 
 
 **One should never limit oneself due to the expectations that the society or themselves imposed on them. Its the biggest harm that one does to themself by believing that these limits are real.**
 
 PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR <br>
-AND ITS TIME TO KNOW, WHAT YOU ARE CAPABLE OF, IN THIS WORLD
+AND ITS TIME TO TRYLY ANSWER YOURSELF, WHAT YOU CAN DO IN THIS WORLD.
 
 <br>
 <br>
