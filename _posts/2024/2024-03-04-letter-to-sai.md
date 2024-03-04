@@ -13,11 +13,10 @@ Forget what you are till now, start a new life. <br>
 
 ### Don't's
 * Do not complain and do not indulge in any blame games. 
-    * Most often we blame others (unless its true), just to avoid working, The less you blame others for your situation, the more you would want to work on the problem yourself. And that's the best way to handle things.
-    * Complaining less makes you a better asset to anyone.
-    * Even in our personal lives, by complaining less about others, we will gather the courage to face truth about ourselves.
+    - Most often we blame others (unless its true), just to avoid working, The less you blame others for your situation, the more you would want to work on the problem yourself. And that's the best way to handle things.
+    - Complaining less makes you a better asset to anyone.
+    - Even in our personal lives, by complaining less about others, we will gather the courage to face truth about ourselves.
 * Do not enter into any venture with fear. Fear kills your thought.
-
     - Take this as an opportunity to work without fear, in fact, work to produce something of value to others.
     - You should be open-minded. Understand that there will always be things that are unknown, but you can only reduce unknowns by working. **Remember action produces information.**
 
@@ -45,7 +44,8 @@ Forget what you are till now, start a new life. <br>
 **One should never limit oneself due to the expectations that the society or themselves imposed on them. Its the biggest harm that one does to themself by believing that these limits are real.**
 
 PLEASE WORK HARDER FOR YOURSELF, WITHOUT FEAR <br>
-AND ITS TIME TO TRYLY ANSWER YOURSELF, WHAT YOU CAN DO IN THIS WORLD.
+AND ITS TIME TO TRULY ANSWER YOURSELF, WHAT YOU CAN DO IN THIS WORLD.
+I DONT KNOW IF EMOTIONS ARE THESEDAYS, BUT ATLEAST, WORK IS REAL. WHAT YOU DO IS REAL.
 
 <br>
 <br>
