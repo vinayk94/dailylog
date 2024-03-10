@@ -24,6 +24,12 @@ I dont know movies if will be made, but we will definitely be making fool of our
 
 It makes more sense to produce more in your early age rather than being tempted to consumption. I say tempted because, by consuming something, you are a consumer to some other individual thinker and ofcourse they make it tempting to fleece you. Only by producing, you can overcome your past, you can develop individual thinking, become immune to traps. Keep producing and others will find a utility in you sooner or later, thus you develop a career, instead of backtracking it.
 
-Once you are past certain age, since you have become a mature part of the environment, it becomes essential to become a customer of others. So, better produce aggressively in early ages to escape from thought poverty in the later stages.
+Once you are past certain age, since you have become a mature part of the environment, it neccessiates you to become a customer of others. So, better produce aggressively in early ages to escape from thought poverty in the later stages.
+
+Overall, the attitude is to be a self reliant, high agency individual, where you need not to be told what to be done. You should be able to develop your own framework to determine things to be done and self motivated enough to implement them. 
+
+Deterministic future is no future at all, its one of the solved paths of the possible future. If we want to be in the future, we should be able to act even with limited information. That's the skill one can only earn, by trying and putting effort into various things in life. You can't read something, expect to be able to handle the reality. Moreover, I dont think that it is a choice to be in the future, it is quite inevitable. And if we want to stick to single framework for living life, avoiding adaptation, we are bound to become the slaves of others in the future.
+Only if you are resourceful, willing to think and put work into your thoughts, you earn the freedom in this modern world.
+
 
 
