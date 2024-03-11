@@ -15,10 +15,11 @@ I really do not understand a culture, where people are being encouraged to go fo
 <br>
 Can you call it a life if you are on a determined path ? If so, what would you use the fruits of this deterministic life for ? Would you invest that again into a determined investment ?  I guess so, because, as you never chose something with uncertainty, you never learn or have the experience /courage to move ahead with less knowledge. If you are participating in this perpetual determinsitic world, what are you doing ? and hence the question **WHAT ARE YOU ?** Are you a bot, if so for whom ? <br>
 <br>
-Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture's information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?<br> Just to be clear, I dont think am eligible to comment on those nations, I have a huge amount of respect to them and their people are one of the most aware and responsible citizens that I have met. Its just feels sad to see such nations with such great cultures, decline and I strongly wish that they grow more aggresively and healthily. <br>
-<br>
+Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture's information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?<br> 
 
-If a culture promotes a deterministic world, in no time, they stop being honest with themselves and will cease being relevant to others. Thats the cost of honesty, for a country, for a culture, and for a person.
+Just to be clear, I dont think am eligible to comment on those nations, I have a huge amount of respect to them and their people are one of the most aware and responsible citizens that I have met. Its just feels sad to see such nations with such great cultures, decline and I strongly wish that they grow more aggresively and healthily. <br>
+
+**If a culture promotes a deterministic world, in no time, they stop being honest with themselves and will cease being relevant to others. Thats the cost of honesty, for a country, for a culture, and for a person.**
 
 <br>
 <br>
