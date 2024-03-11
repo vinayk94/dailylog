@@ -3,7 +3,7 @@ layout: post
 title: "What the current revolution in AI means to an average Engineer ?"
 date: 2024-03-05
 ---
-I myself do not know what to make of it and clerly, have no idea on safe havens.<br>
+I myself do not know what to make of it and clearly, have no idea on safe havens.<br>
 But, what I can feel is that access to information leads to more unique interpretations of it, which if expressed honestly could lead to something useful to the world. If you look at all the people who made it big by producing something, these are the guys who got early access to personal computer and internet. They made use of it and it manisfested into companies serving the world. Now, with advent of AI, knowledge is becoming a commodity. Everyone has access to useful information. It changes the job dynamics completely.
 
 It is no more a case, where we can rely on some withheld knowledge as a leverage for our jobs. It is prompting us to act on our understanding more frequently than earlier. Things would be moving too fast and the only bootleneck would be the action by us. The collection and synthesis of useful knowledge used to take time and used to help us keep our jobs.
