@@ -22,7 +22,6 @@ Just to be clear, I dont think am eligible to comment on those nations, I have a
 **If a culture promotes a deterministic world, in no time, they stop being honest with themselves and will cease being relevant to others. Thats the cost of honesty, for a country, for a culture, and for a person.**
 
 <br>
-<br>
 It feels such a waste of time, if we are not daring to experience anything truly and am afraid that our time will be gone, before we are honest about anything in life.<br>
 
 When I look at some of the best directions, watch best acting, read and hear best music, it makes me so humble that they were able to create something truly new that didn't exist before. And most often, these people speak very honestly about it. They do not care about others opinions. They just wanted to express themselves.
