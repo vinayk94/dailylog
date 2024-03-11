@@ -9,6 +9,7 @@ Our earlier definition of what we do, what career we get into, what possessions 
 But, more and more,it occurs to me that, we are what we are honest about. <br>
 Unless, we are honest about something, we can't think new, we cant act new, and we are just those who chose to clones of others.<br>
 How can we expect to know the truth of anything, unless we are honest about it ? It goes without saying that finding new information, learning something new, creating something new, requires effort. But, even to make ourselves conducive to effort, we need to be honest with ourselves.<br>
+I really do not understand a culture, where people are being encouraged to go for less effort more return paths. I just cant fathom that one could really learn, understand and experience truth, if they didn't care to put effort into it. I wonder how many lives this culture would be creating, where a person is capped to have a limited set of experiennces in life and worse, they are already predetermined. It is not life if you are being forced to act in some way. <br>
 <br>
 It feels such a waste of time, if we are not daring to experience anything truly and am afraid that our time will be gone, before we are honest about anything in life.<br>
 
