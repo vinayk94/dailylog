@@ -34,9 +34,10 @@ They are their honesty...
 
 A man's life is just a dot product of his honesty dimension and other areas of life.<br>
 A person like Grigori Perelman is honest with maths and he is a mathematician. <br>
-Honesty dissolves our ego, which is just an image that we hold of our past, and equips us with least biased lens to look at the current situation.<br>
 
 Generally, a person is more inclined to be honest with his family and that may be the reason, older people stress upon family when asked what's important in life. It could be that, it's the real experience that moves us, as it uncovers some unique and mostly true information. We can experience something for real only when we are being honest, Otherwise, we are just trying to imitate the feelings published by others. E.g. trying to experience something at a place just because some one posted it on social media. <br>
+
+**Honesty dissolves our ego, which is just an image that we hold of our past, and equips us with least biased lens to look at the current situation.**<br>
 
 
 
