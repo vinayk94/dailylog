@@ -10,7 +10,7 @@ This interactive visualization demonstrates the complex interactions in nested b
 
 <iframe src="https://vinayk94.github.io/nested-systems-viz" width="100%" height="800px" frameborder="0"></iframe>
 
-[View full page version](https://{vinayk94}.github.io/nested-systems-viz)
+[View full page version](https://vinayk94.github.io/nested-systems-viz)
 
 ## About this Visualization
 
