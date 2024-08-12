@@ -37,9 +37,9 @@ I chose PuLP as the tool to implement this linear programming model as its an op
 
 The problem revolves around three key decisions: buying, using, and selling vehicles. Therefore, I defined the following decision variables:
 
-1. $buy_{y,v}$: Number of vehicles of type $v$ bought in year $y$
-2. $use_{y,v}$: Number of vehicles of type $v$ used in year $y$
-3. $sell_{y,v}$: Number of vehicles of type $v$ sold in year $y$
+1. \(buy_{y,v}\): Number of vehicles of type \(v\) bought in year \(y\)
+2. \(use_{y,v}\): Number of vehicles of type \(v\) used in year \(y\)
+3. \(sell_{y,v}\): Number of vehicles of type \(v\) sold in year \(y\)
 
 These variables are crucial as they allow us to track the fleet's composition and usage over time. They directly represent the decisions a fleet manager would make each year.
 
@@ -62,7 +62,7 @@ sell_vars = LpVariable.dicts("sell",
 
 The objective is to minimize the total cost over the planning horizon. This includes several cost components:
 
-$$ \text{Minimize } C_{total} = \sum_{y=2023}^{2038} (C_{buy}^y + C_{ins}^y + C_{mnt}^y + C_{fuel}^y - C_{sell}^y) $$
+\[ \text{Minimize } C_{total} = \sum_{y=2023}^{2038} (C_{buy}^y + C_{ins}^y + C_{mnt}^y + C_{fuel}^y - C_{sell}^y) \]
 
 Let's break down each cost component:
 
@@ -70,7 +70,7 @@ Let's break down each cost component:
 
 Buying costs represent the capital expenditure for fleet renewal. This is crucial because transitioning to lower-emission vehicles often requires significant upfront investment.
 
-$$ C_{buy}^y = \sum_{v \in V} buy_{y,v} \cdot cost_v $$
+\[ C_{buy}^y = \sum_{v \in V} buy_{y,v} \cdot cost_v \]
 
 In code:
 
@@ -86,9 +86,9 @@ buying_costs = lpSum([
 
 Insurance is an ongoing operational cost that varies with the age and value of vehicles. Including it ensures we account for the full cost of ownership.
 
-$$ C_{ins}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot ins_{y-y_p}^v $$
+\[ C_{ins}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot ins_{y-y_p}^v \]
 
-Where $fleet_{y,v}$ is the number of vehicles of type $v$ in the fleet in year $y$, and $ins_{y-y_p}^v$ is the insurance cost percentage for a vehicle of age $y-y_p$.
+Where \(fleet_{y,v}\) is the number of vehicles of type \(v\) in the fleet in year \(y\), and \(ins_{y-y_p}^v\) is the insurance cost percentage for a vehicle of age \(y-y_p\).
 
 In code:
 
@@ -105,9 +105,9 @@ insurance_costs = lpSum([
 
 Maintenance costs typically increase as vehicles age. This component encourages the model to balance between keeping older, fully depreciated vehicles and investing in new, potentially more efficient ones.
 
-$$ C_{mnt}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot mnt_{y-y_p}^v $$
+\[ C_{mnt}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot mnt_{y-y_p}^v \]
 
-Where $mnt_{y-y_p}^v$ is the maintenance cost percentage for a vehicle of age $y-y_p$.
+Where \(mnt_{y-y_p}^v\) is the maintenance cost percentage for a vehicle of age \(y-y_p\).
 
 In code:
 
@@ -124,9 +124,9 @@ maintenance_costs = lpSum([
 
 Fuel costs are a major part of operational expenses and directly tied to emissions. This component drives the model to consider more fuel-efficient or alternative fuel vehicles.
 
-$$ C_{fuel}^y = \sum_{v \in V} use_{y,v} \cdot cons_v \cdot fuel\_cost_{y,f_v} \cdot range_v $$
+\[ C_{fuel}^y = \sum_{v \in V} use_{y,v} \cdot cons_v \cdot fuel\_cost_{y,f_v} \cdot range_v \]
 
-Where $cons_v$ is the fuel consumption of vehicle $v$, $fuel\_cost_{y,f_v}$ is the cost of fuel for vehicle $v$ in year $y$, and $range_v$ is the yearly range of the vehicle.
+Where \(cons_v\) is the fuel consumption of vehicle \(v\), \(fuel\_cost_{y,f_v}\) is the cost of fuel for vehicle \(v\) in year \(y\), and \(range_v\) is the yearly range of the vehicle.
 
 In code:
 
@@ -145,9 +145,9 @@ fuel_costs = lpSum([
 
 Including resale value encourages the model to optimize the timing of vehicle replacements, balancing the benefits of keeping fully depreciated vehicles against the advantages of newer, potentially more efficient models.
 
-$$ C_{sell}^y = \sum_{v \in V} sell_{y,v} \cdot cost_v \cdot resale_{y-y_p}^v $$
+\[ C_{sell}^y = \sum_{v \in V} sell_{y,v} \cdot cost_v \cdot resale_{y-y_p}^v \]
 
-Where $resale_{y-y_p}^v$ is the resale value percentage for a vehicle of age $y-y_p$.
+Where \(resale_{y-y_p}^v\) is the resale value percentage for a vehicle of age \(y-y_p\).
 
 In code:
 
@@ -167,9 +167,9 @@ resale_value = lpSum([
 
 This constraint ensures that the fleet can meet all transportation demands each year, which is crucial for maintaining business operations.
 
-$$ \sum_{v \in V_{s,d}} use_{y,v} \cdot range_v \geq demand_{y,s,d} \quad \forall y,s,d $$
+\[ \sum_{v \in V_{s,d}} use_{y,v} \cdot range_v \geq demand_{y,s,d} \quad \forall y,s,d \]
 
-Where $V_{s,d}$ is the set of vehicles of size $s$ that can cover distance $d$.
+Where \(V_{s,d}\) is the set of vehicles of size \(s\) that can cover distance \(d\).
 
 In code:
 
@@ -188,9 +188,9 @@ for _, row in demand.iterrows():
 
 This constraint drives the decarbonization aspect of the problem, forcing the model to transition to lower-emission vehicles over time.
 
-$$ \sum_{v \in V} use_{y,v} \cdot cons_v \cdot emission_{f_v} \cdot range_v \leq emission\_limit_y \quad \forall y $$
+\[ \sum_{v \in V} use_{y,v} \cdot cons_v \cdot emission_{f_v} \cdot range_v \leq emission\_limit_y \quad \forall y \]
 
-Where $emission_{f_v}$ is the emission factor for the fuel used by vehicle $v$.
+Where \(emission_{f_v}\) is the emission factor for the fuel used by vehicle \(v\).
 
 In code:
 
@@ -209,9 +209,9 @@ for year in carbon_emissions['Year']:
 
 These constraints model the 10-year lifecycle of vehicles, ensuring they are only bought in their designated purchase year and sold by the end of their useful life.
 
-$$ use_{y,v} = sell_{y,v} = 0, \quad \forall y < y_p \text{ or } y \geq y_p + 10 $$
-$$ buy_{y,v} = 0, \quad \forall y \neq y_p $$
-$$ \sum_{y=y_p}^{y_p+9} sell_{y,v} = \sum_{y=y_p}^{y_p+9} buy_{y,v} \quad \forall v $$
+\[ use_{y,v} = sell_{y,v} = 0, \quad \forall y < y_p \text{ or } y \geq y_p + 10 \]
+\[ buy_{y,v} = 0, \quad \forall y \neq y_p \]
+\[ \sum_{y=y_p}^{y_p+9} sell_{y,v} = \sum_{y=y_p}^{y_p+9} buy_{y,v} \quad \forall v \]
 
 In code:
 
@@ -234,7 +234,7 @@ for v_id in vehicles['ID']:
 
 This constraint keeps track of the fleet composition, which is necessary for calculating insurance and maintenance costs.
 
-$$ fleet_{y,v} = \sum_{i=y_p}^{y} (buy_{i,v} - sell_{i,v}) \quad \forall y,v $$
+\[ fleet_{y,v} = \sum_{i=y_p}^{y} (buy_{i,v} - sell_{i,v}) \quad \forall y,v \]
 
 In code:
 
@@ -285,4 +285,4 @@ Looking back, I'm satisfied with the approach I took, but I'm also curious about
 - How would the results change if we incorporated uncertainty in fuel prices or demand?
 - Might there be heuristic approaches that could find good (if not optimal) solutions more quickly for even larger problem instances?
 
-This hackathon has sparked my interest in the intersection of optimization and sustainability. I'm eager to learn more about how others approached this problem.
+ I'm eager to learn more about how others approached this problem.
