@@ -9,4 +9,4 @@ plugins:
 
 paginate: 10
 paginate_path: "/posts/page:num/"
-
+markdown: GFM
