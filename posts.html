@@ -4,38 +4,25 @@ title: All Posts
 permalink: /posts/
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Posts</title>
-</head>
-<body>
+<h1>All Journal Entries</h1>
 
-    <h1>All Journal Entries</h1>
+<ul>
+    {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            - {{ post.date | date: "%B %d, %Y" }}
+        </li>
+    {% endfor %}
+</ul>
 
-    <ul>
-        {% for post in site.posts %}
-            <li>
-                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                - {{ post.date | date: "%B %d, %Y" }}
-            </li>
-        {% endfor %}
-    </ul>
-    
-    <!-- Pagination Links -->
-    <div class="pagination">
-        {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="prev">Previous</a>
-        {% endif %}
-        {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="next">Next</a>
-        {% endif %}
-    </div>
-    
+<!-- Pagination Links -->
+<div class="pagination">
+    {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | relative_url }}" class="prev">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | relative_url }}" class="next">Next</a>
+    {% endif %}
+</div>
 
-    <a href="{{ '/' | prepend: site.baseurl | escape }}">Back to Home</a>
-
-</body>
-</html>
+<a href="{{ '/' | relative_url }}">Back to Home</a>

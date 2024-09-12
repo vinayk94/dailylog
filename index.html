@@ -3,55 +3,24 @@ layout: default
 title: Home
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-</head>
+<h1>Welcome</h1>
 
-<body>
-  <!-- Navigation Section -->
-  <div class="navigation">
-    <a href="{{ site.baseurl }}/about" class="nav-link">About</a>
-    <a href="{{ site.baseurl }}/posts" class="nav-link">Posts</a>    
-  </div>
-  
-    <h1>Welcome</h1>
+<p>One of my favorite comments on youtube is, <br>
+    "Its one of my theories that when people give you advice,  <br>
+    they're really just talking to themselves. <br>
 
-    <p>One of my favorite comments on youtube is, <br>
-        "Its one of my theories that when people give you advice,  <br>
-        they're really just talking to themselves. <br>
+    <br>
+    While I definitely have nothing to offer as advice, <br> I just want to reflect on few things, <br>
+    to digest them and bring some clarity to my thoughts.
+</p>
 
-        <br>
-        While I definitely have nothing to offer as advice, <br> I just want to reflect on few things, <br>
-        to digest them and bring some clarity to my thoughts.
+<h2>Recent Journal Entries</h2>
 
-    </p>
-
-    <h2>Featured Projects</h2>
-        <p>Check out some of my recent work:</p>
-        <ul>
-        <li><a href="/projects#java">Java Projects</a></li>
-        <li><a href="/projects#visualization">Visualization Projects</a></li>
-        <li><a href="/projects#python">Python Projects</a></li>
-        </ul>
-
-        <p><a href="/projects">View all projects</a></p>
-
-    <h2>Recent Journal Entries</h2>
-
-    <ul>
-        {% for post in site.posts limit:5 %}
-            <li>
-                <a href="{{ post.url | prepend: site.baseurl | escape }}">{{ post.title }}</a>
-                - {{ post.date | date: "%B %d, %Y" }}
-            </li>
-        {% endfor %}
-    </ul>
-
-
-
-</body>
-</html>
+<ul>
+    {% for post in site.posts limit:5 %}
+        <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            - {{ post.date | date: "%B %d, %Y" }}
+        </li>
+    {% endfor %}
+</ul>
