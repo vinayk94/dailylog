@@ -4,7 +4,7 @@ email: bheemreddy.vinay.com
 permalink: /journal/:year/:month/:day/:title/
 author: Vinay
 url: "https://vinayk94.github.io/"
-#baseurl: "/dailylog"
+baseurl: "/dailylog"
 baseurl: ""
 
 markdown: kramdown
