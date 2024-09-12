@@ -18,6 +18,10 @@ plugins:
 kramdown:
   parse_block_html: true
 
+
+include:
+  - _includes
+
 #plugins:
 #  - jekyll-paginate
 
