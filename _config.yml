@@ -1,12 +1,33 @@
-theme: jekyll-theme-minimal
+title: Vinay's Blog
+#theme: jekyll-theme-minimal
 permalink: /journal/:year/:month/:day/:title/
 author: Vinay
 url: "https://vinayk94.github.io/"
 baseurl: "/dailylog"
 
+
+markdown: kramdown
+# Build settings
+theme: minima
 plugins:
+  - jekyll-feed
+  - jekyll-toc
+  - jekyll-sitemap
+  - jekyll-seo-tag
   - jekyll-paginate
+kramdown:
+  parse_block_html: true
+
+#plugins:
+#  - jekyll-paginate
 
 paginate: 10
 paginate_path: "/posts/page:num/"
-markdown: GFM
+#markdown: GFM
+
+
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
