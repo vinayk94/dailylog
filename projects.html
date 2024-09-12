@@ -1,65 +1,41 @@
 ---
-layout: default
+layout: page
 title: Projects
 permalink: /projects/
 ---
 
-<h1>Projects</h1>
+<h1>My Projects</h1>
 
-<nav id="project-categories">
-  <ul>
-    <li><a href="#java">Java</a></li>
-    <li><a href="#visualization">Visualization</a></li>
-    <li><a href="#python">Python</a></li>
-  </ul>
-</nav>
-
-<section id="java">
+<div class="project-categories">
   <h2>Java Projects</h2>
   <ul>
     <li>
       <h3>Java Project 1</h3>
       <p>Description of Java Project 1</p>
-      <a href="https://github.com/username/java-project-1">GitHub Repo</a>
+      <a href="https://github.com/yourusername/java-project-1">GitHub Repo</a>
     </li>
     <!-- Add more Java projects as needed -->
   </ul>
-</section>
 
-<section id="visualization">
   <h2>Visualization Projects</h2>
   <ul>
     <li>
       <h3>Visualization Project 1</h3>
       <p>Description of Visualization Project 1</p>
-      <a href="https://username.github.io/visualization-project-1">Live Demo</a> |
-      <a href="https://github.com/username/visualization-project-1">GitHub Repo</a> |
+      <a href="https://yourusername.github.io/visualization-project-1">Live Demo</a> |
+      <a href="https://github.com/yourusername/visualization-project-1">GitHub Repo</a> |
       <a href="/blog/2024/03/15/visualization-project-1">Blog Post</a>
     </li>
     <!-- Add more Visualization projects as needed -->
   </ul>
-</section>
 
-<section id="python">
   <h2>Python Projects</h2>
   <ul>
     <li>
       <h3>Python Project 1</h3>
       <p>Description of Python Project 1</p>
-      <a href="https://github.com/username/python-project-1">GitHub Repo</a>
+      <a href="https://github.com/yourusername/python-project-1">GitHub Repo</a>
     </li>
     <!-- Add more Python projects as needed -->
   </ul>
-</section>
-
-<script>
-  // Smooth scrolling for anchor links
-  document.querySelectorAll('#project-categories a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        behavior: 'smooth'
-      });
-    });
-  });
-</script>
+</div>

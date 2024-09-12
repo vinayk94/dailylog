@@ -11,12 +11,22 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-toc
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate
 kramdown:
   parse_block_html: true
+
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
 
 
 include:
@@ -30,8 +40,5 @@ paginate_path: "/posts/page:num/"
 #markdown: GFM
 
 
-# Collections
-collections:
-  projects:
-    output: true
-    permalink: /projects/:path/
+# Other settings
+show_excerpts: true

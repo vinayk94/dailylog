@@ -2,122 +2,130 @@
 ---
 
 @import "{{ site.theme }}";
+
+// Custom styles
+
 body {
-  background-color: #ffffff; /* White background */
-  color: #333333; /* Dark grey text for better readability */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: #333333; /* Dark grey for headings */
+.wrapper {
+  max-width: 800px;
+  padding: 0 20px;
 }
 
-a {
-  color: #0066cc; /* Standard link color */
-  text-decoration: none; /* Removes underline from links */
+.site-header {
+  border-top: 5px solid #424242;
+  border-bottom: 1px solid #e8e8e8;
+  min-height: 55.95px;
+  position: relative;
 }
 
-a:hover {
-  color: #0055a3; /* Slightly darker blue for link hover state */
-}
+.site-title {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 54px;
+  letter-spacing: -1px;
+  margin-bottom: 0;
+  float: left;
+  color: #424242;
 
-hr {
-  border-top: 1px solid #eeeeee; /* Light horizontal rule */
-}
-
-/* Additional styles for better contrast and spacing */
-p, li, .footer {
-  line-height: 1.6; /* Increases line height for better readability */
-  margin-bottom: 1rem; /* Adds space below paragraphs and list items */
-}
-
-/* Container for navigation links */
-.navigation {
-  display: flex;
-  justify-content: flex-end; /* Aligns items to the right */
-  padding: 10px; /* Adjust as needed */
-}
-
-/* Style for each navigation link */
-.nav-link {
-  display: inline-block;
-  padding: 10px 20px;
-  margin-left: 10px; /* Space between links */
-  background-color: #0078D7;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.nav-link:hover {
-  background-color: #0056a3;
-}
-
-@media (max-width: 600px) {
-  .navigation {
-      flex-direction: column;
-      align-items: flex-end;
-  }
-
-  .nav-link {
-      margin-top: 10px;
+  &:hover {
+    text-decoration: none;
   }
 }
 
-.fixed-quote {
-  position: fixed;
-  top: 0;
-  right: 0; // Aligns the quote to the top right
-  background-color: white; // Or any other color you want
-  padding: 10px;
-  z-index: 1000; // Ensures it stays above other content
-  font-style: italic; // Makes the text italicized
+.site-nav {
+  float: right;
+  line-height: 54px;
+
+  .page-link {
+    color: #424242;
+    line-height: 1.5;
+    margin-left: 20px;
+
+    &:hover {
+      color: #000;
+    }
+  }
 }
 
-.MathJax {
-  font-size: 1.1em;
+.post-list-heading {
+  font-size: 28px;
+  margin-bottom: 30px;
 }
 
-#project-categories {
-  margin-bottom: 2em;
+.post-list {
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: 30px;
+  }
 }
 
-#project-categories ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: space-around;
+.post-meta {
+  font-size: 14px;
+  color: #828282;
 }
 
-#project-categories li {
-  margin: 0 10px;
+.post-link {
+  display: block;
+  font-size: 24px;
 }
 
-section {
-  margin-bottom: 3em;
+.post-content {
+  margin-bottom: 30px;
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
 }
 
-section h2 {
-  border-bottom: 1px solid #eaecef;
-  padding-bottom: 0.3em;
+// Project styles
+
+.project-categories {
+  h2 {
+    font-size: 24px;
+    border-bottom: 1px solid #e8e8e8;
+    padding-bottom: 10px;
+    margin-top: 30px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-bottom: 10px;
+  }
+
+  a {
+    color: #2a7ae2;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
-
-section ul {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-section li {
-  margin-bottom: 1.5em;
-}
-
-section h3 {
-  margin-bottom: 0.5em;
-}
-
-section p {
-  margin-bottom: 0.5em;
-}
-
-
-
