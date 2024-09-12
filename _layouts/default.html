@@ -18,6 +18,8 @@
   </head>
   <body>
 
+    {%- include head.html -%}
+
     {% if page.url == "/" %}
     <!--<div class="fixed-quote">
         "Do not make anything bigger than what it is. <br>
@@ -67,5 +69,6 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {%- include footer.html -%}
   </body>
 </html>
