@@ -23,6 +23,14 @@ jobs:
         run: |
           gem install bundler
           bundle install
+      - name: Check Token Access
+        run: |
+          if [ -z "${{ secrets.GH_TOKEN }}" ]; then
+            echo "GH_TOKEN is not set!"
+          else
+            echo "GH_TOKEN is available."
+          fi
+
 
       - name: Fetch GitHub Projects
         run: |
