@@ -17,7 +17,7 @@ const monthsToFetch = 18;
 
 async function fetchProjects() {
   try {
-    const response = await axios.get(`https://api.github.com/users/${username}/repos`);
+    const response = await axios.get(`https://cors-anywhere.herokuapp.com/https://api.github.com/users/${username}/repos`);
     const repos = response.data;
     
     const projectsContainer = document.getElementById('projects-container');
