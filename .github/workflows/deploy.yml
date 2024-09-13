@@ -13,6 +13,17 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'  #  (adjust if needed)
+          bundler-cache: true  # Caches 'bundle install' results for faster future builds
+
+      - name: Install dependencies
+        run: |
+          gem install bundler
+          bundle install
+
       - name: Fetch GitHub Projects
         run: |
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
@@ -20,7 +31,6 @@ jobs:
 
       - name: Build and deploy
         run: |
-          bundle install
           JEKYLL_ENV=production bundle exec jekyll build
           echo "Deploying site"
         env:
