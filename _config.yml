@@ -7,6 +7,7 @@ url: "https://vinayk94.github.io/"
 baseurl: "/dailylog"
 github_username: vinayk94
 github_repo: dailylog
+repository: vinayk94/dailylog
 #baseurl: ""
 
 markdown: kramdown

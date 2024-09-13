@@ -35,3 +35,4 @@ jobs:
           echo "Deploying site"
         env:
           JEKYLL_PAT: ${{ secrets.GITHUB_TOKEN }}
+          PAGES_REPO_NWO: vinayk94/dailylog
