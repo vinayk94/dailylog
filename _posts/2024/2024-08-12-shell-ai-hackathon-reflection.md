@@ -37,7 +37,7 @@ I chose PuLP as the tool to implement this linear programming model as its an op
 
 The problem revolves around three key decisions: buying, using, and selling vehicles. Therefore, I defined the following decision variables:
 
-1. $buy_{y,v}$: Number of vehicles of type $v$ bought in year $y$
+1. \(buy_{y,v}\): Number of vehicles of type $v$ bought in year $y$
 2. $use_{y,v}$: Number of vehicles of type $v$ used in year $y$
 3. $sell_{y,v}$: Number of vehicles of type $v$ sold in year $y$
 
@@ -108,7 +108,7 @@ Maintenance costs typically increase as vehicles age. This component encourages 
 
 $$ C_{mnt}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot mnt_{y-y_p}^v $$
 
-Where $mnt_{y-y_p}^v$ is the maintenance cost percentage for a vehicle of age $y-y_p$.
+Where \(mnt_{y-y_p}^v\) is the maintenance cost percentage for a vehicle of age \(y-y_p\).
 
 In code:
 
