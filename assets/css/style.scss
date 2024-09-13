@@ -20,7 +20,7 @@ body {
 
 .page-content {
   flex: 1 0 auto;
-  padding-bottom: 15vh; /* Add padding to ensure content doesn't overlap with footer */
+  padding-bottom: 10vh; /* Add padding to ensure content doesn't overlap with footer */
 }
 
 
@@ -107,77 +107,6 @@ body {
 }
 
 // Footer styles
-.site-footer {
-  flex-shrink: 0;
-  border-top: 1px solid #e8e8e8;
-  padding: 15px 0;
-  background-color: #f8f8f8;
-  font-size: 0.9em;
-  color: #828282;
-}
-
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.footer-info {
-  p {
-    margin: 0;
-  }
-  
-  a {
-    color: #828282;
-    text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.footer-github {
-  a {
-    display: inline-flex;
-    align-items: center;
-    color: #828282;
-    text-decoration: none;
-    
-    &:hover {
-      color: #1756a9;
-    }
-  }
-  
-  .svg-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-  }
-}
-
-.footer-credits {
-  text-align: center;
-  margin-top: 10px;
-  
-  p {
-    margin: 0;
-  }
-  
-  a {
-    color: #1756a9;
-    text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-.page-content {
-  flex: 1 0 auto;
-  padding: 30px 0;
-}// Footer styles
 .site-footer {
   position: fixed;
   bottom: 0;
