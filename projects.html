@@ -12,7 +12,7 @@ permalink: /projects/
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script>
-// Replace 'your-github-username' with your actual GitHub username
+
 const username = 'vinayk94';
 const monthsToFetch = 18;
 
@@ -25,6 +25,9 @@ async function fetchProjects() {
     console.log("Repos fetched:", response.data);
 
     const repos = response.data;
+
+    // Sort repositories by their 'updated_at' date in descending order (most recent first)
+    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
     const projectsContainer = document.getElementById('projects-container');
 
     // Log to check if the container exists
