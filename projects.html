@@ -45,14 +45,11 @@ async function fetchProjects() {
         const projectElement = document.createElement('div');
         projectElement.className = 'project';
         projectElement.innerHTML = `
-          <h2>${repo.name}</h2>
+          <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>  <!-- Repository name is now hyperlinked -->
           <p>${repo.description || 'No description available.'}</p>
           <p>Last updated: ${lastUpdated.toDateString()}</p>
           <p>Languages: ${repo.language || 'Not specified'}</p>
-          <div class="project-links">
-            <a href="${repo.html_url}" target="_blank">GitHub Repo</a>
-            ${repo.homepage ? `| <a href="${repo.homepage}" target="_blank">Live Demo</a>` : ''}
-          </div>
+          ${repo.homepage ? `<p><a href="${repo.homepage}" target="_blank">Live Demo</a></p>` : ''}
         `;
         projectsContainer.appendChild(projectElement);
       }

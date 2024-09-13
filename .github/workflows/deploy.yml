@@ -27,8 +27,8 @@ jobs:
       - name: Fetch GitHub Projects
         run: |
           curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-          https://api.github.com/users/your-github-username/repos > _data/projects.json
-
+          https://api.github.com/users/vinayk94/repos > -o _data/projects.json
+          cat _data/projects.json  # Add this line to log the contents of the JSON file
       - name: Build and deploy
         run: |
           JEKYLL_ENV=production bundle exec jekyll build
