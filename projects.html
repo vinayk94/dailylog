@@ -7,16 +7,91 @@ permalink: /projects/
 <h1>My Projects</h1>
 
 <div id="projects-container">
-  {% for project in site.data.projects %}
-  <div class="project">
-    <h2>{{ project.name }}</h2>
-    <p>{{ project.description }}</p>
-    <p>Last updated: {{ project.updated_at }}</p>
-    <p>Languages: {{ project.language }}</p>
-    <a href="{{ project.html_url }}">GitHub Repo</a>
-    {% if project.homepage %}
-    | <a href="{{ project.homepage }}">Live Demo</a>
-    {% endif %}
-  </div>
-  {% endfor %}
+  <!-- Projects will be dynamically inserted here -->
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+// Replace 'your-github-username' with your actual GitHub username
+const username = 'your-github-username';
+const monthsToFetch = 18;
+
+async function fetchProjects() {
+  try {
+    // Fetch data from GitHub API
+    const response = await axios.get(`https://api.github.com/users/${username}/repos?per_page=100`);
+
+    // Log fetched repositories to check if data is received correctly
+    console.log("Repos fetched:", response.data);
+
+    const repos = response.data;
+    const projectsContainer = document.getElementById('projects-container');
+
+    // Log to check if the container exists
+    console.log("Projects container:", projectsContainer);
+
+    for (const repo of repos) {
+      const lastUpdated = new Date(repo.updated_at);
+      const monthsAgo = (new Date() - lastUpdated) / (1000 * 60 * 60 * 24 * 30);
+
+      if (monthsAgo <= monthsToFetch) {
+        // Log the repository being added
+        console.log("Adding project:", repo.name);
+
+        // Create project element and insert it into the page
+        const projectElement = document.createElement('div');
+        projectElement.className = 'project';
+        projectElement.innerHTML = `
+          <h2>${repo.name}</h2>
+          <p>${repo.description || 'No description available.'}</p>
+          <p>Last updated: ${lastUpdated.toDateString()}</p>
+          <p>Languages: ${repo.language || 'Not specified'}</p>
+          <div class="project-links">
+            <a href="${repo.html_url}" target="_blank">GitHub Repo</a>
+            ${repo.homepage ? `| <a href="${repo.homepage}" target="_blank">Live Demo</a>` : ''}
+          </div>
+        `;
+        projectsContainer.appendChild(projectElement);
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    document.getElementById('projects-container').innerHTML = '<p>Error loading projects. Please try again later.</p>';
+  }
+}
+
+// Call the function to fetch and display projects
+fetchProjects();
+</script>
+
+<style>
+/* Add some styling for your project elements */
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project-links {
+  margin: 10px 0;
+}
+
+.project-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 5px;
+  background-color: #f1f8ff;
+  color: #0366d6;
+  border-radius: 3px;
+  font-size: 12px;
+}
+</style>
