@@ -1,0 +1,27 @@
+name: Deploy Projects Page
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Fetch GitHub Projects
+        run: |
+          curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+          https://api.github.com/users/your-github-username/repos > _data/projects.json
+
+      - name: Build and deploy
+        run: |
+          bundle install
+          JEKYLL_ENV=production bundle exec jekyll build
+          echo "Deploying site"
+        env:
+          JEKYLL_PAT: ${{ secrets.GITHUB_TOKEN }}
