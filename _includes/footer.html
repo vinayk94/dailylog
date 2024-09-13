@@ -8,5 +8,14 @@
           <p>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
         </div>
       </div>
+      <div class="footer-social">
+        <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
+          <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+      <div class="footer-credits">
+        <p>This blog is created with GitHub Pages and Jekyll. You can find the source <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener noreferrer">here</a>.</p>
+      </div>
     </div>
   </footer>
