@@ -1,8 +1,10 @@
 ---
 layout: post
-title: "Why are everyone flocking to V2G ?"
+title: "Why is everyone flocking to V2G ?"
 date: 2024-10-14
 ---
+
+#
 
 # Comprehensive V2G Analysis: Utility Perspective and Economic Considerations
 
