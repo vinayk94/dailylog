@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Hidden Costs of Protected Paths"
-date: 2024-10-14
+date: 2024-11-18
 ---
 
 
