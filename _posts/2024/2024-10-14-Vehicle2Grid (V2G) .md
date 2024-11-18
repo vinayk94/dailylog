@@ -6,7 +6,7 @@ date: 2024-10-14
 
 #
 
-# Comprehensive V2G Analysis: Utility Perspective and Economic Considerations
+# Comprehensive V2G Analysis: Utility Perspective and Economic Considerations (Needs research on numbers !!!)
 
 ## Utility Motivation for V2G
 
