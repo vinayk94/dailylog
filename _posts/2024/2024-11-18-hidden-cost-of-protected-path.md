@@ -4,7 +4,6 @@ title: "The Hidden Costs of Protected Paths"
 date: 2024-10-14
 ---
 
-#
 
 What shapes our capacity for understanding - both ourselves and others? I've been wrestling with this question after observing how differently people respond to others facing struggles they once experienced themselves. Sometimes, those who have "made it" show the least empathy for others still finding their way.
 
