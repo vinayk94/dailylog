@@ -5,25 +5,57 @@ on:
     branches:
       - main
 
+env:
+  RUBY_VERSION: 3.1.4
+  TOOL_CACHE: /opt/hostedtoolcache
+
 jobs:
-  pages:  # Changed from 'build' to 'pages'
+  prepare-ruby:
     runs-on: ubuntu-24.04
-    
     steps:
-      - name: Debug Setup
+      - name: Install Ruby build requirements
         run: |
-          ls -la /
-          ls -la $HOME
-          ls -la $GITHUB_WORKSPACE || echo "Workspace not setup yet"
-      
+          sudo apt-get update
+          sudo apt-get install -y git autoconf bison build-essential libssl-dev \
+            libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev \
+            libgdbm6 libgdbm-dev libdb-dev
+
+      - name: Install ruby-build
+        run: |
+          git clone https://github.com/rbenv/ruby-build.git
+          sudo ./ruby-build/install.sh
+
+      - name: Install Ruby in tool cache
+        run: |
+          sudo mkdir -p $TOOL_CACHE/Ruby/$RUBY_VERSION/x64
+          sudo chown -R $USER:$USER $TOOL_CACHE/Ruby
+          ruby-build $RUBY_VERSION $TOOL_CACHE/Ruby/$RUBY_VERSION/x64
+          touch $TOOL_CACHE/Ruby/$RUBY_VERSION/x64.complete
+          echo "$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin" >> $GITHUB_PATH
+          echo "Installation complete. Ruby version:"
+          $TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin/ruby -v
+
+  pages:
+    needs: prepare-ruby
+    runs-on: ubuntu-24.04
+    steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          clean: true  # Ensure clean checkout
-          
-      - name: Basic Setup
+
+      - name: Use installed Ruby
         run: |
-          ls -la
-          echo "Current location: $(pwd)"
-          echo "Found files:"
-          find . -name ".ruby-*"
+          export PATH="$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin:$PATH"
+          ruby -v
+          gem install bundler -v 2.4.22
+          bundle install
+
+      - name: Build site
+        run: |
+          export PATH="$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin:$PATH"
+          JEKYLL_ENV=production bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
