@@ -5,73 +5,16 @@ on:
     branches:
       - main
 
-permissions:
-  contents: write
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
     
     steps:
-      # Debug step to see where setup-ruby might be coming from
-      - name: Debug Environment
-        run: |
-          echo "Current directory structure:"
-          ls -la
-          echo "Current environment:"
-          env
-          echo "GitHub workspace:"
-          echo $GITHUB_WORKSPACE
-          echo "Runner tool cache:"
-          echo $RUNNER_TOOL_CACHE
-      
       - name: Checkout repository
         uses: actions/checkout@v4
-
-      # Debug step after checkout
-      - name: Debug Repository
+      
+      - name: Print Directories
         run: |
-          echo "Repository contents:"
+          pwd
           ls -la
-          echo "GitHub Actions directory:"
-          ls -la .github/workflows || echo "No workflows directory"
-          
-      - name: System Ruby Setup
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby-full build-essential zlib1g-dev
-          
-          # Create a local gems directory
-          mkdir -p $HOME/.local/gems
-          export GEM_HOME="$HOME/.local/gems"
-          export PATH="$HOME/.local/gems/bin:$PATH"
-          
-          # Print Ruby information
-          which ruby
-          ruby -v
-          which gem
-          gem env
-          
-          # Install bundler
-          gem install bundler -v 2.4.22
-          which bundle
-          
-          # Install gems
-          bundle config set --local path 'vendor/bundle'
-          bundle install
-      
-      - name: Build Site
-        env:
-          GEM_HOME: "$HOME/.local/gems"
-          PATH: "$HOME/.local/gems/bin:$PATH"
-        run: |
-          bundle exec jekyll build
-      
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
+          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
