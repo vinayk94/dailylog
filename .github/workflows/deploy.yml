@@ -18,42 +18,31 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
       
-      - name: Install RVM and Ruby
+      - name: Install Ruby and Dependencies
         run: |
-          # Install RVM GPG keys
-          curl -sSL https://rvm.io/mpapis.asc | gpg --import -
-          curl -sSL https://rvm.io/pkuczynski.asc | gpg --import -
-          
-          # Install RVM
-          curl -sSL https://get.rvm.io | bash -s stable
-          
-          # Source RVM
-          source $HOME/.rvm/scripts/rvm
-          
           # Install Ruby
-          rvm install 3.1.4
-          rvm use 3.1.4 --default
-          
-          # Verify installation
-          ruby -v
-      
-      - name: Install dependencies
-        run: |
-          source $HOME/.rvm/scripts/rvm
+          sudo apt-get update
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+
+          # Install bundler
+          export GEM_HOME="$HOME/.gem"
+          export PATH="$GEM_HOME/bin:$PATH"
           gem install bundler -v 2.4.22
-          bundle install --jobs 4 --retry 3
-      
-      - name: Fetch GitHub Projects
-        run: |
-          mkdir -p _data
-          curl -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-            "https://api.github.com/users/${{ github.repository_owner }}/repos" \
-            -o _data/projects.json
+          
+          # Install gems
+          bundle config set --local path 'vendor/bundle'
+          bundle install
       
       - name: Build site
         run: |
-          source $HOME/.rvm/scripts/rvm
+          export GEM_HOME="$HOME/.gem"
+          export PATH="$GEM_HOME/bin:$PATH"
           JEKYLL_ENV=production bundle exec jekyll build
       
       - name: Deploy to GitHub Pages
