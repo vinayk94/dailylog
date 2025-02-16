@@ -19,34 +19,36 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Install ruby-build and Dependencies
+      - name: Install Ruby Dependencies
         run: |
           sudo apt update
-          sudo apt install -y git build-essential libssl-dev libreadline-dev zlib1g-dev autoconf bison \
-            build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
-          git clone https://github.com/rbenv/ruby-build.git /tmp/ruby-build
-          sudo /tmp/ruby-build/install.sh
+          sudo apt install -y git curl autoconf bison build-essential \
+            libssl-dev libyaml-dev libreadline6-dev zlib1g-dev \
+            libncurses5-dev libffi-dev libgdbm6 libgdbm-dev libdb-dev
       
-      - name: Create Ruby Directory
-        run: sudo mkdir -p /opt/hostedtoolcache/Ruby/3.1.4/x64
-      
-      - name: Set Directory Permissions
-        run: sudo chown -R $USER:$USER /opt/hostedtoolcache/Ruby/3.1.4
-      
-      - name: Install Ruby
-        run: ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
-      
-      - name: Mark Installation Complete
-        run: touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
-      
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42
-        with:
-          ruby-version: '3.1.4'
-          bundler-cache: true
-      
-      - name: Install dependencies
+      - name: Install rbenv
         run: |
+          git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+          echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+          echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+          exec $SHELL
+          
+      - name: Install ruby-build
+        run: |
+          git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+          
+      - name: Install Ruby
+        run: |
+          export PATH="$HOME/.rbenv/bin:$PATH"
+          eval "$(rbenv init -)"
+          rbenv install 3.1.4
+          rbenv global 3.1.4
+          ruby -v
+          
+      - name: Install Bundler and Dependencies
+        run: |
+          export PATH="$HOME/.rbenv/bin:$PATH"
+          eval "$(rbenv init -)"
           gem install bundler -v 2.4.22
           bundle install --jobs 4 --retry 3
       
@@ -58,7 +60,10 @@ jobs:
             -o _data/projects.json
       
       - name: Build site
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: |
+          export PATH="$HOME/.rbenv/bin:$PATH"
+          eval "$(rbenv init -)"
+          JEKYLL_ENV=production bundle exec jekyll build
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
