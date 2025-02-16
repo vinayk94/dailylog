@@ -7,54 +7,37 @@ on:
 
 env:
   RUBY_VERSION: 3.1.4
-  TOOL_CACHE: /opt/hostedtoolcache
 
 jobs:
-  prepare-ruby:
+  pages:
     runs-on: ubuntu-24.04
     steps:
-      - name: Install Ruby build requirements
+      - name: Pre-ruby setup
         run: |
           sudo apt-get update
-          sudo apt-get install -y git autoconf bison build-essential libssl-dev \
-            libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev \
-            libgdbm6 libgdbm-dev libdb-dev
-
-      - name: Install ruby-build
-        run: |
+          sudo apt-get install -y git autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev
           git clone https://github.com/rbenv/ruby-build.git
           sudo ./ruby-build/install.sh
+          sudo mkdir -p /opt/hostedtoolcache/Ruby/3.1.4/x64
+          sudo chown -R $USER:$USER /opt/hostedtoolcache/Ruby
+          ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+          touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
 
-      - name: Install Ruby in tool cache
-        run: |
-          sudo mkdir -p $TOOL_CACHE/Ruby/$RUBY_VERSION/x64
-          sudo chown -R $USER:$USER $TOOL_CACHE/Ruby
-          ruby-build $RUBY_VERSION $TOOL_CACHE/Ruby/$RUBY_VERSION/x64
-          touch $TOOL_CACHE/Ruby/$RUBY_VERSION/x64.complete
-          echo "$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin" >> $GITHUB_PATH
-          echo "Installation complete. Ruby version:"
-          $TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin/ruby -v
-
-  pages:
-    needs: prepare-ruby
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Use installed Ruby
+      - name: Setup Ruby using setup-ruby
+        uses: ruby/setup-ruby@8575951200e472d5f2d95c625da0c7bec8217c42
+        with:
+          ruby-version: '3.1.4'
+
+      - name: Build and deploy
         run: |
-          export PATH="$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin:$PATH"
-          ruby -v
           gem install bundler -v 2.4.22
           bundle install
+          bundle exec jekyll build
 
-      - name: Build site
-        run: |
-          export PATH="$TOOL_CACHE/Ruby/$RUBY_VERSION/x64/bin:$PATH"
-          JEKYLL_ENV=production bundle exec jekyll build
-
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
