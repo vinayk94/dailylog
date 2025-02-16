@@ -16,36 +16,61 @@ jobs:
     timeout-minutes: 10
     
     steps:
+      # Debug step to see where setup-ruby might be coming from
+      - name: Debug Environment
+        run: |
+          echo "Current directory structure:"
+          ls -la
+          echo "Current environment:"
+          env
+          echo "GitHub workspace:"
+          echo $GITHUB_WORKSPACE
+          echo "Runner tool cache:"
+          echo $RUNNER_TOOL_CACHE
+      
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
-      
-      - name: Install Ruby and Dependencies
+      # Debug step after checkout
+      - name: Debug Repository
         run: |
-          # Install Ruby
+          echo "Repository contents:"
+          ls -la
+          echo "GitHub Actions directory:"
+          ls -la .github/workflows || echo "No workflows directory"
+          
+      - name: System Ruby Setup
+        run: |
           sudo apt-get update
           sudo apt-get install -y ruby-full build-essential zlib1g-dev
-
+          
+          # Create a local gems directory
+          mkdir -p $HOME/.local/gems
+          export GEM_HOME="$HOME/.local/gems"
+          export PATH="$HOME/.local/gems/bin:$PATH"
+          
+          # Print Ruby information
+          which ruby
+          ruby -v
+          which gem
+          gem env
+          
           # Install bundler
-          export GEM_HOME="$HOME/.gem"
-          export PATH="$GEM_HOME/bin:$PATH"
           gem install bundler -v 2.4.22
+          which bundle
           
           # Install gems
           bundle config set --local path 'vendor/bundle'
           bundle install
       
-      - name: Build site
+      - name: Build Site
+        env:
+          GEM_HOME: "$HOME/.local/gems"
+          PATH: "$HOME/.local/gems/bin:$PATH"
         run: |
-          export GEM_HOME="$HOME/.gem"
-          export PATH="$GEM_HOME/bin:$PATH"
-          JEKYLL_ENV=production bundle exec jekyll build
+          bundle exec jekyll build
       
-      - name: Deploy to GitHub Pages
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
