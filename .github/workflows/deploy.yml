@@ -6,15 +6,24 @@ on:
       - main
 
 jobs:
-  build:
+  pages:  # Changed from 'build' to 'pages'
     runs-on: ubuntu-24.04
     
     steps:
+      - name: Debug Setup
+        run: |
+          ls -la /
+          ls -la $HOME
+          ls -la $GITHUB_WORKSPACE || echo "Workspace not setup yet"
+      
       - name: Checkout repository
         uses: actions/checkout@v4
-      
-      - name: Print Directories
+        with:
+          clean: true  # Ensure clean checkout
+          
+      - name: Basic Setup
         run: |
-          pwd
           ls -la
-          echo "GITHUB_WORKSPACE: $GITHUB_WORKSPACE"
+          echo "Current location: $(pwd)"
+          echo "Found files:"
+          find . -name ".ruby-*"
