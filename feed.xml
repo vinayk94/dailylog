@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://vinayk94.github.io//dailylog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinayk94.github.io//dailylog/" rel="alternate" type="text/html" /><updated>2025-02-16T17:14:22+00:00</updated><id>https://vinayk94.github.io//dailylog/feed.xml</id><title type="html">Vinay’s Blog</title><author><name>Vinay</name></author><entry><title type="html">European and U.S. Electricity Markets: Structure, Operations, and Efficiency</title><link href="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/" rel="alternate" type="text/html" title="European and U.S. Electricity Markets: Structure, Operations, and Efficiency" /><published>2025-02-16T00:00:00+00:00</published><updated>2025-02-16T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/"><![CDATA[<p>The European and U.S. electricity markets have evolved with <strong>different regulatory, operational, and market structures</strong>. This document explores the <strong>intricacies of the EU electricity system</strong>, detailing <strong>market operations, redispatching, regulatory constraints, and pricing mechanisms</strong>, followed by a <strong>detailed comparison with the U.S. system</strong>.</p>
+
+<hr />
+<h2 id="the-european-electricity-market-structure-and-operations"><strong>The European Electricity Market: Structure and Operations</strong></h2>
+<h3 id="market-structure-and-entities"><strong>Market Structure and Entities</strong></h3>
+<p>The European electricity market consists of multiple <strong>independent national Transmission System Operators (TSOs) and Power Exchanges (PXs)</strong>. Unlike the U.S., where ISOs/RTOs manage both market clearing and grid operations, <strong>Europe separates market trading from grid operations</strong>.</p>
+
+<h4 id="key-market-entities-in-europe"><strong>Key Market Entities in Europe</strong></h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Entity</th>
+      <th>Role</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Power Exchanges (PXs)</strong></td>
+      <td>Run <strong>day-ahead and intraday markets</strong>, clear trades</td>
+      <td>EPEX Spot, Nord Pool, OMIE</td>
+    </tr>
+    <tr>
+      <td><strong>Transmission System Operators (TSOs)</strong></td>
+      <td>Ensure <strong>grid reliability</strong>, perform <strong>redispatching</strong>, manage <strong>cross-border flows</strong></td>
+      <td>RTE (France), TenneT (Germany), National Grid ESO (UK)</td>
+    </tr>
+    <tr>
+      <td><strong>Market Coupling Mechanism</strong></td>
+      <td>Optimizes cross-border trading</td>
+      <td>EUPHEMIA Algorithm</td>
+    </tr>
+    <tr>
+      <td><strong>Balancing Market Operators</strong></td>
+      <td>Handle <strong>real-time imbalances</strong></td>
+      <td>TSOs &amp; separate BSPs (Balancing Service Providers)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="operations-timeline-in-europe"><strong>Operations Timeline in Europe</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Stage</strong></th>
+      <th><strong>Who Runs It?</strong></th>
+      <th><strong>What Happens?</strong></th>
+      <th><strong>Constraints Considered?</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Day-Ahead Market (DAM)</strong></td>
+      <td>PXs (EPEX Spot, Nord Pool)</td>
+      <td>Market clearing <strong>via EUPHEMIA algorithm</strong>, setting prices</td>
+      <td><strong>Cross-border transmission limits only</strong> (no intra-zone constraints)</td>
+    </tr>
+    <tr>
+      <td><strong>Intraday Market (IDM)</strong></td>
+      <td>PXs (Continuous &amp; Auction)</td>
+      <td>Adjustments to trades <strong>closer to real-time</strong></td>
+      <td><strong>No intra-zone constraints</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Redispatching</strong></td>
+      <td>TSOs</td>
+      <td>Adjust generator schedules <strong>to fix congestion</strong></td>
+      <td><strong>Intra-zonal congestion fixed after market clearing</strong></td>
+    </tr>
+    <tr>
+      <td><strong>Balancing Market (Real-Time Dispatch)</strong></td>
+      <td>TSOs</td>
+      <td><strong>Correct real-time deviations in generation/load</strong></td>
+      <td><strong>TSOs activate balancing reserves</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="trading-blocks-and-settlement-in-european-balancing-markets"><strong>Trading Blocks and Settlement in European Balancing Markets</strong></h3>
+<p>The <strong>balancing markets in Europe</strong> operate with <strong>specific trading blocks and settlement mechanisms</strong> to ensure real-time stability.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Market Segment</strong></th>
+      <th><strong>Timeframe</strong></th>
+      <th><strong>Who Participates?</strong></th>
+      <th><strong>Payment Structure</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Frequency Containment Reserves (FCR)</strong></td>
+      <td>Seconds</td>
+      <td>Pre-qualified generators, demand response</td>
+      <td>Availability + activation payment</td>
+    </tr>
+    <tr>
+      <td><strong>Automatic Frequency Restoration Reserves (aFRR)</strong></td>
+      <td>5-15 min</td>
+      <td>Generators, flexible loads</td>
+      <td>Capacity payment + energy activation payment</td>
+    </tr>
+    <tr>
+      <td><strong>Manual Frequency Restoration Reserves (mFRR)</strong></td>
+      <td>15-30 min</td>
+      <td>Generators, storage, demand response</td>
+      <td>Bids cleared in merit order + activation payment</td>
+    </tr>
+    <tr>
+      <td><strong>Replacement Reserves (RR)</strong></td>
+      <td>30+ min</td>
+      <td>Large-scale power plants, interconnectors</td>
+      <td>Clearing price mechanism</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>✅ <strong>Balancing markets operate under pre-contracted capacity payments and real-time activation payments</strong>.<br />
+✅ <strong>TSOs procure reserves based on system needs, ensuring grid stability</strong>.</p>
+
+<hr />
+<h2 id="redispatching-in-europe-why-it-exists-and-how-it-works"><strong>Redispatching in Europe: Why It Exists and How It Works</strong></h2>
+
+<p>Europe operates on <strong>zonal pricing</strong> rather than <strong>nodal pricing</strong> (used in the U.S.). PXs clear markets <strong>only considering cross-border constraints</strong>, but <strong>do not account for intra-zonal transmission congestion</strong>.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Problem</strong></th>
+      <th><strong>Solution in EU (Redispatching)</strong></th>
+      <th><strong>Alternative in U.S. (Nodal Pricing)</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Market clearing ignores intra-zone congestion</td>
+      <td>TSOs redispatch generators post-market clearing</td>
+      <td>Market clearing <strong>includes all constraints upfront</strong></td>
+    </tr>
+    <tr>
+      <td>Generation schedules may be infeasible</td>
+      <td>TSOs instruct <strong>some plants to reduce output, others to increase</strong></td>
+      <td>Nodal prices <strong>automatically reflect congestion</strong></td>
+    </tr>
+    <tr>
+      <td>Increases costs for consumers</td>
+      <td>Costs are <strong>socialized via grid tariffs</strong></td>
+      <td>Costs are <strong>borne by congestion-causing participants</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>✅ <strong>Redispatching allows TSOs to fix congestion problems</strong>.
+🚨 <strong>It is an extra step that would be unnecessary if nodal pricing was used</strong>.</p>
+
+<hr />
+<h2 id="us-electricity-market-structure-and-efficiency-example-ercot"><strong>U.S. Electricity Market: Structure and Efficiency (Example: ERCOT)</strong></h2>
+<p>ERCOT (Electric Reliability Council of Texas) operates under a <strong>fully deregulated, real-time market structure</strong> with no capacity market.</p>
+
+<h3 id="trading-blocks-and-settlement-in-ercots-balancing-market"><strong>Trading Blocks and Settlement in ERCOT’s Balancing Market</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th><strong>Market Segment</strong></th>
+      <th><strong>Timeframe</strong></th>
+      <th><strong>Who Participates?</strong></th>
+      <th><strong>Payment Structure</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Day-Ahead Market (DAM)</strong></td>
+      <td>1 day ahead</td>
+      <td>Generators, loads, traders</td>
+      <td>Cleared market price</td>
+    </tr>
+    <tr>
+      <td><strong>Real-Time Market (RTM)</strong></td>
+      <td>5-15 min</td>
+      <td>Online generators, flexible demand</td>
+      <td>Locational Marginal Pricing (LMP)</td>
+    </tr>
+    <tr>
+      <td><strong>Ancillary Services (AS)</strong></td>
+      <td>1 hour to real-time</td>
+      <td>Pre-qualified generators</td>
+      <td>Availability + deployment payment</td>
+    </tr>
+    <tr>
+      <td><strong>Fast Frequency Response (FFR)</strong></td>
+      <td>Seconds to minutes</td>
+      <td>Batteries, demand response</td>
+      <td>Capacity payment + energy payment</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>✅ <strong>ERCOT does not use a capacity market; instead, it relies on real-time scarcity pricing.</strong><br />
+✅ <strong>All constraints are included in SCUC/SCED, avoiding the need for redispatching.</strong></p>
+
+<hr />
+<h2 id="summary"><strong>Summary:</strong></h2>
+<p>✅ <strong>Nodal pricing includes transmission constraints, ensuring congestion is priced into LMPs.</strong><br />
+✅ <strong>Market and grid operations are integrated within ISOs, reducing complexity.</strong><br />
+🚨 <strong>Europe relies on redispatching because market clearing does not consider intra-zonal constraints.</strong><br />
+🚨 <strong>Future European reforms may push toward nodal pricing to improve efficiency.</strong></p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[The European and U.S. electricity markets have evolved with different regulatory, operational, and market structures. This document explores the intricacies of the EU electricity system, detailing market operations, redispatching, regulatory constraints, and pricing mechanisms, followed by a detailed comparison with the U.S. system.]]></summary></entry><entry><title type="html">Self-Worth and the Search for Truth</title><link href="https://vinayk94.github.io//dailylog/journal/2024/11/30/self-worth-and-search-for-truth/" rel="alternate" type="text/html" title="Self-Worth and the Search for Truth" /><published>2024-11-30T00:00:00+00:00</published><updated>2024-11-30T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/11/30/self-worth-and-search-for-truth</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/11/30/self-worth-and-search-for-truth/"><![CDATA[<p>Self-worth, I believe, is fundamental to how we function as individuals and as a society. It’s not something that can be given to us by others - it must come from within. The issue with seeking worth externally is that it makes us dependent on others’ validation, creating a fragile ego that needs constant feeding.</p>
+
+<p>True self-worth grows when we push our boundaries and accomplish things we thought were beyond us. It’s like expanding our span in linear algebra - we increase our capacity to handle life’s challenges. This internal growth is far more valuable than any external validation.</p>
+
+<p>I see this pattern in many places - where we’ve somehow convinced generations that material wealth is the primary validator of life. The result? We have people in their 60s who are physically healthy but mentally stagnant. They haven’t learned anything new in 30 years because learning would challenge their ego.</p>
+
+<p>What deeply concerns me is seeing fathers who have given up on their own lives, merely existing day to day. They’ve lost their spirit and rely solely on their ego and validation from others, often demanding respect for trivial things. I wonder what makes a person so hopeless that they need to hurt others just to feel some sense of power to get through their day. I believe it comes down to self-worth - if you have enough internal worth, you won’t need to rely on others to live your life.</p>
+
+<p>Life and work teach us certain truths as we progress. If your mindset remains unchanged despite aging, it likely means you haven’t engaged with real challenges or allowed yourself to learn. When I see elderly people still measuring life purely through material wealth, caught up in spite and jealousy, it suggests they never worked on anything contributing to collective good.</p>
+
+<p>Most people I’ve worked with in science and industry share a humbling quality - they believe in greater causes. They pay taxes because they believe in their country, they strive for transparency in science because they believe in humanity’s collective progress. To reach this understanding, you naturally learn that spite, jealousy, and material wealth matter less than truth.</p>
+
+<p>But we can’t force people toward collective good - that only pushes them away. The care for truth must come from within. You discover what matters through your own journey. When you find yourself running in circles, making the same mistakes repeatedly, you realize you need to find truth. And to find truth, you need to humble yourself.</p>
+
+<p>Looking at Indian civilization, I wonder how a culture that produced the Vedas and Bhagavad Gita, that understood human internal struggles so deeply, could lose its way. This makes me realize that perhaps truth alone is not enough - it must be paired with continuous work and enhancement, regardless of age. I see this in someone like Daniel Booth, a pioneer, who taught his daughter to fight and continued working and contributing until his final days. I respect him deeply for embodying this principle of constant growth and contribution.</p>
+
+<p>This makes me wonder - if we had found a way to efficiently transmit not just knowledge but also the drive to work and enhance it, would evolution have needed so many years? It’s no coincidence that humanity has evolved so dramatically in the last 400 years - it’s because of the spread of science and the challenges it set for itself. Science provides both the knowledge and the framework for continuing to build upon it.</p>
+
+<p>Between birth and death, I believe our only real wealth is our self-worth, measured by our net contribution to any living being besides ourselves. In our final moments, its hard to believe that we would be thinking about that extra house we could have bought.</p>
+
+<p>Parents today have a crucial role - nurturing self-worth in their children is perhaps the greatest wealth they can pass on. How we react to insults, handle self-doubt, approach problems, navigate careers, take risks - everything stems from self-worth. While we might falter often, having this center helps us reorient ourselves. Without it, we risk flowing wherever the wind takes us, which is fine in the right environment but dangerous in unproductive ones.</p>
+
+<p>Our internal measuring system for genuine self-worth is remarkably accurate. I’ve observed that many who are absurdly wealthy yet lack true self-worth are often the most insecure, constantly seeking validation. Meanwhile, others know they could rebuild if they lost everything. The poor often have well-calibrated self-worth because they directly see how their work feeds their families.</p>
+
+<p>The only way to build genuine self-worth is through constant self-improvement and contribution. When I see an 80-year-old grandmother from Illinois paragliding on her birthday, dancing, working, and cherishing life, I see someone whose joy comes from confidence in herself and her intrinsic worth. That’s the kind of wealth we should all strive to build.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[Self-worth, I believe, is fundamental to how we function as individuals and as a society. It’s not something that can be given to us by others - it must come from within. The issue with seeking worth externally is that it makes us dependent on others’ validation, creating a fragile ego that needs constant feeding.]]></summary></entry><entry><title type="html">The Hidden Costs of Protected Paths</title><link href="https://vinayk94.github.io//dailylog/journal/2024/11/18/hidden-cost-of-protected-path/" rel="alternate" type="text/html" title="The Hidden Costs of Protected Paths" /><published>2024-11-18T00:00:00+00:00</published><updated>2024-11-18T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/11/18/hidden-cost-of-protected-path</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/11/18/hidden-cost-of-protected-path/"><![CDATA[<p>What shapes our capacity for understanding - both ourselves and others? I’ve been wrestling with this question after observing how differently people respond to others facing struggles they once experienced themselves. Sometimes, those who have “made it” show the least empathy for others still finding their way.</p>
+
+<p>There is no objective definition of wealth. For me, wealth is measured by how many times I’ve tried and failed at things. Not in terms of accomplishments, but rather in the integral of action across my trials over time. That’s the only real wealth. This insight emerged after reflecting on how we often shield ourselves or others from potential failure, not realizing what we might be losing in the process.</p>
+
+<p>Sometimes I wonder: what if we had taken a predetermined path? Would that have led to a better position?</p>
+
+<p>At a fundamental level, I believe it’s our duty to ourselves to put effort into knowing ourselves better. When we stay on a predetermined path without exposing ourselves to various experiences, we never truly discover which character we might develop into. Instead, we mask our weaknesses with our successful qualities.</p>
+
+<p>Yes, a predetermined path might lead to better outcomes in conventional metrics like finances. But is that all life is about? How do we know how we’d react to different situations?</p>
+
+<p>Even if two people start from the same place, without exposure to experiences that reveal their true nature, there wouldn’t be much behavioral learning over time - except what comes from external incentives like their predetermined position. We might assume that two people who struggled in their early years would naturally sympathize with others in similar situations as they grow older. But there’s no guarantee of this, because without self-knowledge, they may judge others based on their current motives rather than objective circumstances. It’s only through trying and failing that we truly come to know ourselves.</p>
+
+<p>The paradox is clear - in our attempt to create the perfect path, we might be limiting our capacity for growth, empathy, and true self-understanding. Perhaps real development comes not from avoiding life’s challenges, but from facing them consciously and learning who we are in the process.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[What shapes our capacity for understanding - both ourselves and others? I’ve been wrestling with this question after observing how differently people respond to others facing struggles they once experienced themselves. Sometimes, those who have “made it” show the least empathy for others still finding their way.]]></summary></entry><entry><title type="html">Why is everyone flocking to V2G ?</title><link href="https://vinayk94.github.io//dailylog/journal/2024/10/14/Vehicle2Grid-(V2G)/" rel="alternate" type="text/html" title="Why is everyone flocking to V2G ?" /><published>2024-10-14T00:00:00+00:00</published><updated>2024-10-14T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/10/14/Vehicle2Grid%20(V2G)</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/10/14/Vehicle2Grid-(V2G)/"><![CDATA[<p>#</p>
+
+<h1 id="comprehensive-v2g-analysis-utility-perspective-and-economic-considerations-needs-research-on-numbers-">Comprehensive V2G Analysis: Utility Perspective and Economic Considerations (Needs research on numbers !!!)</h1>
+
+<h2 id="utility-motivation-for-v2g">Utility Motivation for V2G</h2>
+
+<p>As I dig deeper into the complexities of grid management and energy storage, I find myself questioning why utilities are considering Vehicle-to-Grid (V2G) technology. The primary driver seems to be the growing uncertainty in electricity demand due to increasing EV adoption. This uncertainty poses significant challenges:</p>
+
+<ol>
+  <li>EVs represent an unpredictable load on the grid.</li>
+  <li>Simultaneous charging (e.g., after work hours) could create difficult-to-manage demand peaks.</li>
+  <li>This uncertainty leads to high balancing energy costs for utilities.</li>
+</ol>
+
+<p>V2G offers a potential solution by allowing EVs to feed electricity back into the grid during peak demand, effectively creating a distributed network of mobile batteries. But is this solution as straightforward as it seems?</p>
+
+<h3 id="potential-impact-example">Potential Impact Example</h3>
+
+<p>To understand the scale of V2G’s potential, let’s consider a hypothetical scenario:</p>
+
+<p>Assume a utility has 100,000 EV owners, each with a 60 kWh battery capable of providing 10 kWh back to the grid during peak hours:</p>
+
+<p>Potential V2G capacity = 100,000 * 10 kWh = 1,000,000 kWh or 1 GWh</p>
+
+<p>This capacity could potentially replace several peaker plants (typical capacity 100-200 MW). It’s an impressive figure, but it raises questions about the practicality and economics of harnessing this distributed resource.</p>
+
+<h2 id="the-v2g-vs-stationary-storage-dilemma">The V2G vs. Stationary Storage Dilemma</h2>
+
+<p>As I ponder the V2G concept, I can’t help but wonder: why aren’t utilities simply opting for stationary storage? It seems like a more straightforward solution. A utility implementing stationary storage would primarily need to:</p>
+
+<ol>
+  <li>Install large battery systems at strategic locations</li>
+  <li>Set up control systems to manage these batteries</li>
+  <li>Integrate the storage with their existing grid management software</li>
+</ol>
+
+<p>This approach appears to involve fewer moving parts and stakeholders compared to V2G. The utility would have direct control over the storage assets, and they wouldn’t need to coordinate with thousands of individual vehicle owners or worry about the unpredictability of when vehicles might be available to provide power.</p>
+
+<p>To better understand this dilemma, let’s look at the details of both options:</p>
+
+<h3 id="stationary-storage-overview">Stationary Storage Overview</h3>
+
+<p>Stationary storage systems typically consist of:</p>
+<ol>
+  <li>Battery packs (often lithium-ion)</li>
+  <li>Power conversion systems (inverters)</li>
+  <li>Thermal management systems</li>
+  <li>Control and communication systems</li>
+</ol>
+
+<h4 id="costs-for-utility-scale-stationary-storage">Costs for utility-scale stationary storage:</h4>
+<ul>
+  <li>Capital cost: $200-$300/kWh (2023 estimates)</li>
+  <li>Installation: $50-$100/kWh</li>
+  <li>Operation and Maintenance: $10-$20/kWh/year</li>
+</ul>
+
+<p>For a 100 MWh system:</p>
+<ul>
+  <li>Initial cost: $25-40 million</li>
+  <li>Annual O&amp;M: $1-2 million</li>
+</ul>
+
+<h3 id="detailed-cost-breakdown-of-v2g-infrastructure">Detailed Cost Breakdown of V2G Infrastructure</h3>
+
+<p>To understand the economic viability of V2G, let’s break down the infrastructure costs for a utility planning to enable V2G for 10,000 EVs:</p>
+
+<ol>
+  <li>EV Upgrades (assumed borne by manufacturers or owners): €0</li>
+  <li>Bi-directional Home Chargers: €25,000,000 (10,000 * €2,500 average)</li>
+  <li>Public Chargers: €10,000,000 (100 * €100,000 average)</li>
+  <li>Communication Systems:
+    <ul>
+      <li>Per charger: €2,750,000 (11,000 * €250)</li>
+      <li>Central hub: €750,000</li>
+    </ul>
+  </li>
+  <li>Grid Management Systems: €6,000,000</li>
+  <li>Market and Payment Systems: €2,500,000</li>
+</ol>
+
+<p>Total estimated infrastructure cost: €47,000,000</p>
+
+<h4 id="operational-costs-for-v2g">Operational Costs for V2G</h4>
+
+<p>Beyond initial infrastructure costs, ongoing operational expenses include:</p>
+
+<ol>
+  <li>System Maintenance:
+    <ul>
+      <li>Estimated annual cost: 5-10% of infrastructure cost (€2,350,000 - €4,700,000)</li>
+    </ul>
+  </li>
+  <li>Customer Support:
+    <ul>
+      <li>Estimated annual cost: €1,000,000 - €2,000,000</li>
+    </ul>
+  </li>
+  <li>Energy Trading Operations:
+    <ul>
+      <li>Estimated annual cost: €500,000 - €1,000,000</li>
+    </ul>
+  </li>
+  <li>Grid Balancing Operations:
+    <ul>
+      <li>Estimated annual cost: €1,000,000 - €2,000,000</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Total estimated annual operational cost: €4,850,000 - €9,700,000</p>
+
+<h2 id="comparing-v2g-and-stationary-storage">Comparing V2G and Stationary Storage</h2>
+
+<p>As I compare these options, several key differences become apparent:</p>
+
+<h3 id="advantages-of-stationary-storage">Advantages of Stationary Storage</h3>
+
+<ol>
+  <li>Predictability: Fixed location and capacity, easier to manage and dispatch</li>
+  <li>Availability: Always connected to the grid, not dependent on vehicle presence</li>
+  <li>Scalability: Can be sized and located optimally for grid needs</li>
+  <li>Simplicity: Fewer stakeholders and moving parts compared to V2G</li>
+  <li>Control: Direct utility ownership and operation possible</li>
+  <li>Longevity: Potentially longer lifespan due to controlled usage patterns</li>
+  <li>Standardization: More uniform technology and protocols</li>
+</ol>
+
+<h3 id="challenges-with-v2g">Challenges with V2G</h3>
+
+<ol>
+  <li>Uncertainty: Variable availability based on user behavior and EV adoption rates</li>
+  <li>Complexity: Requires coordination with multiple stakeholders (EV owners, manufacturers, etc.)</li>
+  <li>Infrastructure: Needs widespread deployment of bidirectional chargers</li>
+  <li>User Acceptance: Relies on customer willingness to participate</li>
+  <li>Battery Degradation: Concerns about accelerated EV battery wear</li>
+  <li>Regulatory Hurdles: May face more complex regulatory landscape</li>
+  <li>Technical Challenges: Needs advanced communication and control systems</li>
+</ol>
+
+<h2 id="economic-considerations">Economic Considerations</h2>
+
+<p>As I dig deeper into the economics, the picture becomes even more complex:</p>
+
+<h3 id="capital-costs">Capital Costs</h3>
+<ul>
+  <li>Stationary: Higher upfront costs for utility</li>
+  <li>V2G: Distributed investment, lower per-unit cost for utility</li>
+</ul>
+
+<h3 id="operational-costs">Operational Costs</h3>
+<ul>
+  <li>Stationary: More predictable, potentially lower over time</li>
+  <li>V2G: Variable, depends on customer incentives and participation rates</li>
+</ul>
+
+<h3 id="revenue-streams">Revenue Streams</h3>
+<ul>
+  <li>Stationary: Clear, utility-controlled</li>
+  <li>V2G: Shared with customers, potentially more complex</li>
+</ul>
+
+<h3 id="return-on-investment">Return on Investment</h3>
+<ul>
+  <li>Stationary: More predictable, easier to calculate</li>
+  <li>V2G: Higher uncertainty, dependent on EV adoption and user behavior</li>
+</ul>
+
+<h2 id="break-even-analysis-for-v2g">Break-Even Analysis for V2G</h2>
+
+<p>To get a clearer picture of the economic viability of V2G, I’ve attempted a break-even analysis for a hypothetical project:</p>
+
+<p>Assumptions:</p>
+<ul>
+  <li>10,000 V2G-enabled EVs</li>
+  <li>Each EV provides 10 kWh/day for grid services</li>
+  <li>Grid service value: $0.10/kWh</li>
+  <li>Revenue split: 40% Utility, 30% Manufacturer, 30% EV Owner</li>
+  <li>Initial infrastructure cost: $50 million</li>
+  <li>Annual operational cost: $5 million</li>
+  <li>EV participation grows 20% annually</li>
+  <li>Grid service value decreases 5% annually due to market saturation</li>
+</ul>
+
+<h3 id="year-1-calculation">Year 1 Calculation:</h3>
+<ul>
+  <li>Total kWh provided: 10,000 EVs * 10 kWh/day * 365 days = 36,500,000 kWh</li>
+  <li>Total revenue: 36,500,000 kWh * $0.10/kWh = $3,650,000</li>
+  <li>Utility revenue: $3,650,000 * 0.4 = $1,460,000</li>
+  <li>Manufacturer revenue: $3,650,000 * 0.3 = $1,095,000</li>
+  <li>EV owner revenue: $3,650,000 * 0.3 = $1,095,000</li>
+  <li>Project cash flow: $1,460,000 + $1,095,000 - $5,000,000 = -$2,445,000</li>
+</ul>
+
+<h3 id="year-2-calculation">Year 2 Calculation:</h3>
+<ul>
+  <li>EVs participating: 10,000 * 1.2 = 12,000</li>
+  <li>Grid service value: $0.10 * 0.95 = $0.095/kWh</li>
+  <li>Total kWh provided: 12,000 * 10 * 365 = 43,800,000 kWh</li>
+  <li>Total revenue: 43,800,000 * $0.095 = $4,161,000</li>
+  <li>Utility revenue: $4,161,000 * 0.4 = $1,664,400</li>
+  <li>Manufacturer revenue: $4,161,000 * 0.3 = $1,248,300</li>
+  <li>Project cash flow: $1,664,400 + $1,248,300 - $5,000,000 = -$2,087,300</li>
+</ul>
+
+<p>Cumulative cash flow after Year 2: -$54,532,300</p>
+
+<p>Based on these calculations and assuming similar growth rates, the project would break even in approximately 12-15 years. This long payback period highlights the economic challenges of V2G implementation.</p>
+
+<h2 id="critical-factors-affecting-v2g-viability">Critical Factors Affecting V2G Viability</h2>
+
+<p>As I reflect on this analysis, several critical factors emerge that will likely determine the viability of V2G:</p>
+
+<ol>
+  <li>EV adoption rate and V2G participation</li>
+  <li>Value of grid services</li>
+  <li>Battery degradation costs</li>
+  <li>Regulatory support and incentives</li>
+  <li>Technology cost reductions over time</li>
+</ol>
+
+<h2 id="emerging-questions">Emerging Questions</h2>
+
+<p>This analysis leaves me with several pressing questions:</p>
+
+<ol>
+  <li>Given the complexities and economic challenges of V2G, why are utilities and automakers like E.ON and Volkswagen pursuing this technology?</li>
+  <li>Are there hidden benefits or long-term strategic considerations that might justify the investment in V2G despite the apparent economic hurdles?</li>
+  <li>How might the economics change if we consider potential future scenarios, such as much higher EV adoption rates or significant changes in electricity market dynamics?</li>
+  <li>Could there be innovative business models or technological advancements that could dramatically improve the viability of V2G?</li>
+</ol>
+
+<p>In the next part, I’ll look into why this approach might be more viable for vertically integrated companies like Tesla, and how third-party providers could potentially ease some of these challenges. Perhaps by examining these different approaches, we can gain more insight into the potential future of V2G technology.</p>
+
+<h1 id="v2g-an-evolutionary-step-in-energy-systems">V2G: An Evolutionary Step in Energy Systems</h1>
+
+<p>As I delve deeper into the concept of Vehicle-to-Grid (V2G) technology, I’m struck by how it seems to represent a natural progression in the development of our energy systems. Let’s examine why V2G might be an inevitable step in our energy future, independent of any specific company’s approach.</p>
+
+<h2 id="the-evolutionary-logic-of-v2g">The Evolutionary Logic of V2G</h2>
+
+<ol>
+  <li>
+    <p>Renewable Energy Integration:
+Our transition to more variable renewable energy sources like wind and solar creates a growing need for flexible, grid-scale storage. EVs, with their large, distributed battery network, could play a crucial role in balancing supply and demand. This synergy between EVs and renewables seems almost inevitable as both technologies mature.</p>
+  </li>
+  <li>
+    <p>Grid Resilience:
+With climate change increasing the frequency of extreme weather events, our grid infrastructure needs to become more robust and flexible. V2G could provide emergency backup power and help stabilize the grid during disruptions. This dual-use of EV batteries – for transportation and grid support – appears to be a logical evolution in our quest for more resilient energy systems.</p>
+  </li>
+  <li>
+    <p>Electrification of Transport:
+The shift towards EVs is accelerating, driven by environmental concerns and improving technology. Utilizing this growing fleet of mobile batteries for grid services maximizes their value and seems like a natural next step. It’s not just about using cars for transportation, but seeing them as integral parts of our energy ecosystem.</p>
+  </li>
+  <li>
+    <p>Smart City Development:
+The concept of smart cities relies on interconnected, efficient systems. V2G fits perfectly into this paradigm by turning vehicles into active participants in the urban energy ecosystem. As our cities become smarter, the integration of EVs into the broader energy network seems almost inevitable.</p>
+  </li>
+  <li>
+    <p>Economic Efficiency:
+As EV adoption grows, V2G offers a way to monetize idle vehicle batteries, potentially lowering the total cost of ownership for EVs and accelerating their adoption. This economic incentive could be a key driver in the widespread implementation of V2G technology.</p>
+  </li>
+  <li>
+    <p>Technological Convergence:
+The advancement of IoT, AI, and high-speed communication networks makes the complex coordination required for V2G increasingly feasible. As these technologies continue to evolve, the barriers to implementing V2G are likely to decrease.</p>
+  </li>
+</ol>
+
+<h2 id="economic-rationale">Economic Rationale</h2>
+
+<p>From an economic perspective, V2G makes sense on several levels:</p>
+
+<ol>
+  <li>
+    <p>Asset Utilization:
+Personal vehicles are parked and idle for a large portion of the day. V2G allows for better utilization of these expensive assets, potentially creating new revenue streams for EV owners.</p>
+  </li>
+  <li>
+    <p>Grid Infrastructure Savings:
+By providing local grid services, V2G could potentially reduce the need for costly grid upgrades and peaker plants, leading to overall system cost savings.</p>
+  </li>
+  <li>
+    <p>Renewable Energy Economics:
+V2G could improve the economics of renewable energy by providing low-cost energy storage, helping to balance supply and demand, and reducing curtailment of renewable generation.</p>
+  </li>
+  <li>
+    <p>EV Adoption Acceleration:
+The potential for reduced electricity costs and additional revenue from grid services could make EVs more attractive to consumers, potentially accelerating EV adoption and creating a virtuous cycle.</p>
+  </li>
+</ol>
+
+<p>While V2G is not without challenges – including battery degradation concerns, regulatory hurdles, and the need for significant infrastructure investment – it appears to be a logical and potentially unavoidable step in the evolution of our energy and transportation systems, particularly if EV adoption continues to accelerate as projected.</p>
+
+<p>That said, it’s important to note that other technologies or approaches could emerge to serve similar functions. For example, advancements in stationary grid-scale batteries or other forms of energy storage (like pumped hydro or hydrogen) could potentially fulfill some of the roles envisioned for V2G.</p>
+
+<p>As we look at specific implementations of V2G technology, such as Tesla’s integrated approach or the E.ON-VW collaboration, it’s crucial to keep this broader evolutionary perspective in mind. These different approaches are not just competing business strategies, but experiments in how to best realize the potential of V2G in our evolving energy landscape.</p>
+
+<h1 id="v2g-implementation-strategies-teslas-success-and-eon-vws-potential">V2G Implementation Strategies: Tesla’s Success and E.ON-VW’s Potential</h1>
+
+<p>When examining V2G implementation strategies, it’s crucial to distinguish between proven approaches and theoretical possibilities. Tesla’s track record in this space stands in stark contrast to the more speculative nature of the E.ON-VW collaboration.</p>
+
+<h2 id="teslas-proven-success">Tesla’s Proven Success</h2>
+
+<p>Tesla has been effectively implementing V2G-like functionality for years through its Powerwall and vehicle-to-home (V2H) capabilities. While not traditional V2G in the sense of feeding power back to the grid, these technologies demonstrate Tesla’s ability to integrate vehicle batteries into broader energy systems.</p>
+
+<p>Key aspects of Tesla’s success include:</p>
+
+<ol>
+  <li>
+    <p>Integrated Ecosystem: 
+Tesla’s control over EVs, home energy storage, solar panels, and software allows for seamless integration. This isn’t just theoretical - Tesla owners are already using their Powerwall batteries in conjunction with their vehicles for home energy management.</p>
+  </li>
+  <li>
+    <p>Software Prowess: 
+Tesla’s over-the-air updates have repeatedly added new functionalities to existing hardware, showcasing their ability to innovate rapidly. This agility is crucial in the fast-evolving energy landscape.</p>
+  </li>
+  <li>
+    <p>Market Adoption: 
+Tesla has successfully convinced a significant portion of its customer base to adopt integrated energy solutions, demonstrating real-world viability.</p>
+  </li>
+  <li>
+    <p>Grid Services: 
+While not widespread, Tesla has already implemented grid service programs in some areas, like its Virtual Power Plant in California, proving the concept’s feasibility.</p>
+  </li>
+  <li>
+    <p>Financial Performance: 
+Tesla’s energy business, although smaller than its automotive sector, has shown growth and contributes to the company’s overall profitability.</p>
+  </li>
+</ol>
+
+<h2 id="eon-vw-collaboration-potential-and-uncertainties">E.ON-VW Collaboration: Potential and Uncertainties</h2>
+
+<p>In contrast, the E.ON-VW collaboration is still largely theoretical. While both companies bring valuable expertise, their joint V2G efforts haven’t yet been proven in the market.</p>
+
+<p>Potential advantages:</p>
+
+<ol>
+  <li>
+    <p>Complementary Expertise: 
+E.ON’s grid knowledge combined with VW’s automotive experience could potentially create a robust V2G solution.</p>
+  </li>
+  <li>
+    <p>Market Reach: 
+The combination of E.ON’s utility customers and VW’s vehicle buyers could provide a large potential user base.</p>
+  </li>
+  <li>
+    <p>Regulatory Familiarity: 
+E.ON’s experience as a utility could help navigate complex European energy regulations.</p>
+  </li>
+</ol>
+
+<p>However, significant uncertainties remain:</p>
+
+<ol>
+  <li>
+    <p>Integration Challenges: 
+Unlike Tesla’s unified ecosystem, E.ON and VW must overcome the hurdle of integrating two separate systems.</p>
+  </li>
+  <li>
+    <p>Speed of Implementation: 
+The need for inter-company coordination could slow down development and deployment compared to Tesla’s agile approach.</p>
+  </li>
+  <li>
+    <p>Customer Adoption: 
+It’s unclear whether E.ON and VW can create an offering compelling enough to drive widespread customer adoption.</p>
+  </li>
+  <li>
+    <p>Proof of Concept: 
+Unlike Tesla, the E.ON-VW collaboration has yet to demonstrate a working V2G system at scale.</p>
+  </li>
+</ol>
+
+<h2 id="comparative-analysis">Comparative Analysis</h2>
+
+<ol>
+  <li>Track Record:
+    <ul>
+      <li>Tesla: Has a proven history of implementing V2G-like features and grid services.</li>
+      <li>E.ON-VW: Collaboration is still in early stages without tangible market results.</li>
+    </ul>
+  </li>
+  <li>Integration:
+    <ul>
+      <li>Tesla: Seamless integration across their ecosystem is already a reality.</li>
+      <li>E.ON-VW: Integration between separate company systems remains a significant challenge.</li>
+    </ul>
+  </li>
+  <li>Innovation Speed:
+    <ul>
+      <li>Tesla: Demonstrates rapid innovation through frequent software updates and new feature rollouts.</li>
+      <li>E.ON-VW: Speed of innovation is yet to be determined, but likely slower due to coordination needs.</li>
+    </ul>
+  </li>
+  <li>Market Adoption:
+    <ul>
+      <li>Tesla: Has successfully driven adoption of integrated energy solutions among its customer base.</li>
+      <li>E.ON-VW: Potential for wide adoption exists but is unproven.</li>
+    </ul>
+  </li>
+  <li>Regulatory Navigation:
+    <ul>
+      <li>Tesla: Has shown ability to shape and adapt to regulations, particularly in the US.</li>
+      <li>E.ON-VW: May have advantage in European markets due to E.ON’s established position, but this is yet to be demonstrated.</li>
+    </ul>
+  </li>
+</ol>
+
+<p>In conclusion, while the E.ON-VW collaboration presents an interesting potential approach to V2G implementation, it remains largely theoretical at this point. Tesla, on the other hand, has demonstrated real-world success in implementing V2G-like technologies and services. This proven track record gives Tesla a significant advantage in the current V2G landscape.</p>
+
+<p>As the V2G market evolves, it will be interesting to see if the E.ON-VW collaboration can translate its potential advantages into tangible results, and whether other approaches emerge that can compete with Tesla’s integrated model. However, for now, Tesla’s approach stands out as the clear leader in turning the concept of vehicle-grid integration into reality.</p>
+
+<h1 id="the-role-of-third-party-providers-in-v2g-implementation">The Role of Third-Party Providers in V2G Implementation</h1>
+
+<p>As we’ve seen, V2G implementation presents significant challenges, even for established players like Tesla or collaborations like E.ON-VW. This complexity has created an opportunity for specialized third-party providers to enter the market. These companies aim to bridge gaps and provide solutions that could potentially accelerate V2G adoption across the industry.</p>
+
+<h2 id="potential-services-offered-by-third-party-providers">Potential Services Offered by Third-Party Providers</h2>
+
+<ol>
+  <li>V2G Hardware:
+    <ul>
+      <li>Bi-directional chargers</li>
+      <li>Grid integration modules for EVs</li>
+    </ul>
+  </li>
+  <li>Software Platforms:
+    <ul>
+      <li>Vehicle-to-grid communication systems</li>
+      <li>Energy management and optimization algorithms</li>
+      <li>User interfaces for EV owners</li>
+    </ul>
+  </li>
+  <li>Aggregation Services:
+    <ul>
+      <li>Pooling EVs to provide grid services</li>
+      <li>Interfacing with energy markets</li>
+    </ul>
+  </li>
+  <li>Data Analytics:
+    <ul>
+      <li>Predictive models for EV availability</li>
+      <li>Grid impact assessments</li>
+    </ul>
+  </li>
+  <li>Customer Engagement:
+    <ul>
+      <li>Education and onboarding for V2G programs</li>
+      <li>Customer support services</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="impact-on-v2g-implementation">Impact on V2G Implementation</h2>
+
+<p>The involvement of third-party providers could potentially address some key challenges:</p>
+
+<ol>
+  <li>
+    <p>Technical Integration:
+Specialized integration platforms could reduce development costs for utilities and automakers, potentially accelerating implementation timelines. However, this introduces new questions about interoperability and standardization across different third-party solutions.</p>
+  </li>
+  <li>
+    <p>Economic Viability:
+Shared infrastructure and pay-as-you-go models offered by third parties could lower initial capital expenditure for utilities and automakers. This might improve the economic case for V2G, but it also introduces a new party in the revenue sharing model, potentially complicating the financial dynamics.</p>
+  </li>
+  <li>
+    <p>Regulatory Compliance:
+Third-party providers with specialized knowledge in grid services and EV integration could help navigate the complex and evolving regulatory landscape. This expertise could be particularly valuable in markets with intricate energy regulations.</p>
+  </li>
+  <li>
+    <p>Customer Adoption:
+Dedicated customer engagement and support services from specialized providers might improve participation rates in V2G programs. However, this also raises questions about brand dilution for automakers and potential customer confusion with multiple parties involved.</p>
+  </li>
+  <li>
+    <p>Grid Integration:
+Advanced aggregation and energy management systems from third-party providers could offer more sophisticated optimization and larger aggregated resources for grid services. This could potentially make V2G more attractive to grid operators.</p>
+  </li>
+</ol>
+
+<h2 id="economic-model-with-third-party-involvement">Economic Model with Third-Party Involvement</h2>
+
+<p>Let’s revisit our economic model, now including a third-party provider:</p>
+
+<p>Assumptions:</p>
+<ul>
+  <li>Third-party provides hardware and software, taking 20% of gross revenue</li>
+  <li>Reduced upfront costs: $30 million (from $50 million)</li>
+  <li>Reduced annual operational costs: $3 million (from $5 million)</li>
+  <li>Other assumptions remain the same as in our previous model</li>
+</ul>
+
+<p>Year 1 Calculation:</p>
+<ul>
+  <li>Total revenue: $3,650,000 (same as before)</li>
+  <li>Third-party revenue: $3,650,000 * 0.2 = $730,000</li>
+  <li>Remaining revenue: $2,920,000</li>
+  <li>Utility revenue: $2,920,000 * 0.5 = $1,460,000 (increased share)</li>
+  <li>Manufacturer revenue: $2,920,000 * 0.25 = $730,000</li>
+  <li>EV owner revenue: $2,920,000 * 0.25 = $730,000</li>
+  <li>Project cash flow: $1,460,000 + $730,000 - $3,000,000 = -$810,000</li>
+</ul>
+
+<p>Cumulative cash flow after Year 1: -$30,810,000</p>
+
+<p>This model suggests a potential break-even around Year 8-10, an improvement over the original 12-15 year estimate. However, it’s important to note that this is still a theoretical model and real-world implementation could vary significantly.</p>
+
+<h2 id="critical-factors-for-third-party-success">Critical Factors for Third-Party Success</h2>
+
+<ol>
+  <li>
+    <p>Standardization: 
+Developing and adhering to industry standards for V2G technology will be crucial for widespread adoption.</p>
+  </li>
+  <li>
+    <p>Data Security and Privacy: 
+Ensuring robust protection of sensitive customer and grid data is paramount, especially when multiple parties are involved.</p>
+  </li>
+  <li>
+    <p>Scalability: 
+Third-party systems must be able to handle rapid growth in EV adoption and V2G participation.</p>
+  </li>
+  <li>
+    <p>Flexibility: 
+Adapting to different regulatory environments and utility requirements across various markets will be essential.</p>
+  </li>
+  <li>
+    <p>Value Proposition: 
+Third-party providers must demonstrate clear economic benefits over in-house development by utilities or automakers.</p>
+  </li>
+</ol>
+
+<h2 id="remaining-challenges">Remaining Challenges</h2>
+
+<p>Despite the potential benefits of third-party involvement, several fundamental challenges remain:</p>
+
+<ol>
+  <li>
+    <p>Battery Degradation: 
+This core issue of V2G is not solved by third-party involvement and remains a concern for EV owners.</p>
+  </li>
+  <li>
+    <p>Market Saturation: 
+The value of V2G services may still decrease as more capacity becomes available, regardless of who provides the service.</p>
+  </li>
+  <li>
+    <p>Grid Reliability: 
+Dependence on distributed, privately-owned resources for grid services remains a concern for grid operators.</p>
+  </li>
+  <li>
+    <p>Complex Partnerships: 
+Managing relationships between utilities, automakers, and third-party providers adds another layer of complexity to V2G implementation.</p>
+  </li>
+</ol>
+
+<p>While third-party providers offer potential solutions to some V2G implementation challenges, their involvement also introduces new complexities. As the V2G market evolves, it will be interesting to see how these providers integrate with established players like Tesla or collaborations like E.ON-VW, and whether they can significantly accelerate the adoption of V2G technology.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[#]]></summary></entry><entry><title type="html">Letter to younger self</title><link href="https://vinayk94.github.io//dailylog/journal/2024/08/17/letter-to-younger-self/" rel="alternate" type="text/html" title="Letter to younger self" /><published>2024-08-17T00:00:00+00:00</published><updated>2024-08-17T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/08/17/letter-to-younger-self</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/08/17/letter-to-younger-self/"><![CDATA[<p>Do not waste your youth. Its the only time you can afford to learn to be truly honest with yourself. Otherwise, we will lead a life, where we have to settle on some lie, just to be able to move on with life. Like if you think you know something, we need to question ourselves, if we really are capable of facing and acting on it. Believe it or not, it becomes really hard to be honest with oneself as we grow, as the later stages of human life mostly srvives on ego and we cant afford to believe anything which hurts our ego.</p>
+
+<p>If you are in 20’s, then we are left with another 30-45 years of life with a subset of it where our brain functions at optimal level. If our lives are such a short term events, then we need to question ourselves, if we want to fill it with lies fuelled by our ego, or with the truth.</p>
+
+<p>Do not be apprehensive about hardships. There is really no way of really knowing anything without hardship. Knowledge and understanding requires disposing our old knowledge and filling ourselves with new knowledge. Almost every activity which has to deal with overcoming our current knowledge involves work. Hardships are the best opportunities one can have to getter nearer to the best approximations of truth of any system. Do not be afraid of them and waste your life taking shortcuts.</p>
+
+<p>Do not be so afraid of life. There might be many instances where you feel so overwhelmed that you think its the end of it. Nope, in fact life is brutal and it expects you to ovecome all of it and we have to live longer than what we estimate. If you are curious, life is actually beautiful.</p>
+
+<p>There might be many timees you might feel the need for peace. It is hard to define what peace means for a person. From the higher level, it could be due to our runninng from something in the past or running for something in future. Both of these are functions of our current information. So, it can only solved by being absolutely honest in trying to understand our state and also our state in the world. Only honesty helps with discovering new information.</p>
+
+<p>Our culture doesnot allow nurturing the confidence in taking risks, even in people having enough age and resources. It thinks that confidence comes from accumulation of material wealth. It fails to realize that confidence in a human comes from work and working to your full capacities.</p>
+
+<p>I want to work to know my limitations better. I use work as a tool, what I can do and what I cannot. To be aware of what I feel strongly about.</p>
+
+<p>I have only near about half life left and I dont want to lead this life, in dealing with lies, by believing some one else’s fake version of the world. I want to understand it by myself and I believe, I cannot unless you work. Better not be pleased with anything except for truth and justice.</p>
+
+<p>I dont care about saving anyone’s/family’s name, when the families are still having dog fights for that last piece of meat, despite having their stomachs filled. These idiots struggle to find any use for their life other than gourging things. As someone said, it is no measure of health, when one adjusts to a sick society. I aint looking for any validation from people who are not aware of their place/responsibility in the world.</p>
+
+<p>I believe, sometimes, humans fail to understand the marginal value of money once they become better off. Since they dont have any relative measure to work against, they peter about the smallest, petty things and blow it out of proportions. And for these reasons, I firmly believe, I better be identifying challenges for myself in order to not fall into these crappy traps.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[Do not waste your youth. Its the only time you can afford to learn to be truly honest with yourself. Otherwise, we will lead a life, where we have to settle on some lie, just to be able to move on with life. Like if you think you know something, we need to question ourselves, if we really are capable of facing and acting on it. Believe it or not, it becomes really hard to be honest with oneself as we grow, as the later stages of human life mostly srvives on ego and we cant afford to believe anything which hurts our ego.]]></summary></entry><entry><title type="html">Reflections on the Shell.ai Hackathon 2024</title><link href="https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/" rel="alternate" type="text/html" title="Reflections on the Shell.ai Hackathon 2024" /><published>2024-08-12T00:00:00+00:00</published><updated>2024-08-12T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/"><![CDATA[<p>Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector.  This post is my attempt to document my approach.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>The hackathon presented us with a complex real-world problem: how to transition a fleet of vehicles to lower-emission alternatives while balancing operational costs, meeting demand, and adhering to increasingly strict emission limits over a 16-year period (2023-2038).</p>
+
+<p>Key aspects of the problem included:</p>
+<ul>
+  <li>Multiple vehicle types (Diesel, LNG, BEV) with different characteristics</li>
+  <li>Varying fuel types, costs, and associated emissions</li>
+  <li>Yearly demand that must be satisfied for different vehicle sizes and distance requirements</li>
+  <li>Carbon emission limits that decrease over time</li>
+  <li>Vehicle lifecycle constraints (10-year lifespan, purchase/sell timing)</li>
+</ul>
+
+<p>The challenge was not just about finding the cheapest or lowest-emission solution, but about finding an optimal balance that could realistically be implemented by fleet operators.</p>
+
+<h2 id="linear-programming-and-pulp">Linear Programming and PuLP</h2>
+
+<p>After analyzing the problem, I decided to approach it using linear programming. Here’s why:</p>
+
+<ol>
+  <li>The problem involves optimizing a linear objective (total cost) subject to linear constraints (demand satisfaction, emission limits, etc.).</li>
+  <li>Decision variables (number of vehicles to buy, use, or sell) are inherently integer-valued, making it a mixed-integer linear programming (MILP) problem.</li>
+  <li>Linear programming is well-suited for problems with many variables and constraints, which was the case here with multiple years, vehicle types, and operational constraints.</li>
+</ol>
+
+<p>I chose PuLP as the tool to implement this linear programming model as its an open-source library to quickly make protypes with Python.</p>
+
+<h2 id="decision-variables">Decision Variables</h2>
+
+<p>The problem revolves around three key decisions: buying, using, and selling vehicles. Therefore, I defined the following decision variables:</p>
+
+<ol>
+  <li>$buy_{y,v}$: Number of vehicles of type $v$ bought in year $y$</li>
+  <li>$use_{y,v}$: Number of vehicles of type $v$ used in year $y$</li>
+  <li>$sell_{y,v}$: Number of vehicles of type $v$ sold in year $y$</li>
+</ol>
+
+<p>These variables are crucial as they allow us to track the fleet’s composition and usage over time. They directly represent the decisions a fleet manager would make each year.</p>
+
+<p>In PuLP, these variables are implemented as follows:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">buy_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"buy"</span><span class="p">,</span> 
+                            <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                            <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+
+<span class="n">use_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"use"</span><span class="p">,</span> 
+                            <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                            <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+
+<span class="n">sell_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"sell"</span><span class="p">,</span> 
+                             <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                             <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="objective-function">Objective Function</h2>
+
+<p>The objective is to minimize the total cost over the planning horizon. This includes several cost components:</p>
+
+\[\text{Minimize } C_{total} = \sum_{y=2023}^{2038} (C_{buy}^y + C_{ins}^y + C_{mnt}^y + C_{fuel}^y - C_{sell}^y)\]
+
+<p>Let’s break down each cost component:</p>
+
+<h3 id="1-buying-costs">1. Buying Costs</h3>
+
+<p>Buying costs represent the capital expenditure for fleet renewal. This is crucial because transitioning to lower-emission vehicles often requires significant upfront investment.</p>
+
+\[C_{buy}^y = \sum_{v \in V} buy_{y,v} \cdot cost_v\]
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">buying_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="2-insurance-costs">2. Insurance Costs</h3>
+
+<p>Insurance is an ongoing operational cost that varies with the age and value of vehicles. Including it ensures we account for the full cost of ownership.</p>
+
+\[C_{ins}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot ins_{y-y_p}^v\]
+
+<p>Where $fleet_{y,v}$ is the number of vehicles of type $v$ in the fleet in year $y$, and $ins_{y-y_p}^v$ is the insurance cost percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">insurance_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Insurance Cost %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="3-maintenance-costs">3. Maintenance Costs</h3>
+
+<p>Maintenance costs typically increase as vehicles age. This component encourages the model to balance between keeping older, fully depreciated vehicles and investing in new, potentially more efficient ones.</p>
+
+\[C_{mnt}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot mnt_{y-y_p}^v\]
+
+<p>Where $mnt_{y-y_p}^v$ is the maintenance cost percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">maintenance_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Maintenance Cost %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="4-fuel-costs">4. Fuel Costs</h3>
+
+<p>Fuel costs are a major part of operational expenses and directly tied to emissions. This component drives the model to consider more fuel-efficient or alternative fuel vehicles.</p>
+
+\[C_{fuel}^y = \sum_{v \in V} use_{y,v} \cdot cons_v \cdot fuel\_cost_{y,f_v} \cdot range_v\]
+
+<p>Where $cons_v$ is the fuel consumption of vehicle $v$, $fuel_cost_{y,f_v}$ is the cost of fuel for vehicle $v$ in year $y$, and $range_v$ is the yearly range of the vehicle.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fuel_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Consumption (unit_fuel/km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Fuel'</span><span class="p">]</span> <span class="o">==</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Fuel'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">),</span> <span class="s">'Cost ($/unit_fuel)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="5-resale-value">5. Resale Value</h3>
+
+<p>Including resale value encourages the model to optimize the timing of vehicle replacements, balancing the benefits of keeping fully depreciated vehicles against the advantages of newer, potentially more efficient models.</p>
+
+\[C_{sell}^y = \sum_{v \in V} sell_{y,v} \cdot cost_v \cdot resale_{y-y_p}^v\]
+
+<p>Where $resale_{y-y_p}^v$ is the resale value percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resale_value</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Resale Value %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="constraints">Constraints</h2>
+
+<h3 id="1-demand-satisfaction">1. Demand Satisfaction</h3>
+
+<p>This constraint ensures that the fleet can meet all transportation demands each year, which is crucial for maintaining business operations.</p>
+
+\[\sum_{v \in V_{s,d}} use_{y,v} \cdot range_v \geq demand_{y,s,d} \quad \forall y,s,d\]
+
+<p>Where $V_{s,d}$ is the set of vehicles of size $s$ that can cover distance $d$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">demand</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span>
+        <span class="n">use_vars</span><span class="p">[(</span><span class="n">row</span><span class="p">[</span><span class="s">'Year'</span><span class="p">],</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'Year'</span><span class="p">],</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span> <span class="ow">and</span>
+           <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Size'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s">'Size'</span><span class="p">]</span> <span class="ow">and</span> 
+           <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Distance'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">row</span><span class="p">[</span><span class="s">'Distance'</span><span class="p">]</span>
+    <span class="p">])</span> <span class="o">&gt;=</span> <span class="n">row</span><span class="p">[</span><span class="s">'Demand (km)'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="2-carbon-emissions">2. Carbon Emissions</h3>
+
+<p>This constraint drives the decarbonization aspect of the problem, forcing the model to transition to lower-emission vehicles over time.</p>
+
+\[\sum_{v \in V} use_{y,v} \cdot cons_v \cdot emission_{f_v} \cdot range_v \leq emission\_limit_y \quad \forall y\]
+
+<p>Where $emission_{f_v}$ is the emission factor for the fuel used by vehicle $v$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">carbon_emissions</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]:</span>
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span>
+        <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Consumption (unit_fuel/km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> 
+        <span class="n">fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Fuel'</span><span class="p">]</span> <span class="o">==</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Fuel'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">),</span> <span class="s">'Emissions (CO2/unit_fuel)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> 
+        <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span>
+    <span class="p">])</span> <span class="o">&lt;=</span> <span class="n">carbon_emissions</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">carbon_emissions</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">,</span> <span class="s">'Carbon emission CO2/kg'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="3-vehicle-lifecycle">3. Vehicle Lifecycle</h3>
+
+<p>These constraints model the 10-year lifecycle of vehicles, ensuring they are only bought in their designated purchase year and sold by the end of their useful life.</p>
+
+<p>\(use_{y,v} = sell_{y,v} = 0, \quad \forall y &lt; y_p \text{ or } y \geq y_p + 10\)
+\(buy_{y,v} = 0, \quad \forall y \neq y_p\)
+\(\sum_{y=y_p}^{y_p+9} sell_{y,v} = \sum_{y=y_p}^{y_p+9} buy_{y,v} \quad \forall v\)</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]:</span>
+    <span class="n">purchase_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">year</span> <span class="o">&lt;</span> <span class="n">purchase_year</span> <span class="ow">or</span> <span class="n">year</span> <span class="o">&gt;=</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+
+        <span class="k">if</span> <span class="n">year</span> <span class="o">!=</span> <span class="n">purchase_year</span><span class="p">:</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span><span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span><span class="p">])</span> <span class="o">==</span> \
+             <span class="n">lpSum</span><span class="p">([</span><span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">buy_vars</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="4-fleet-size-calculation">4. Fleet Size Calculation</h3>
+
+<p>This constraint keeps track of the fleet composition, which is necessary for calculating insurance and maintenance costs.</p>
+
+\[fleet_{y,v} = \sum_{i=y_p}^{y} (buy_{i,v} - sell_{i,v}) \quad \forall y,v\]
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fleet_size</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]:</span>
+        <span class="n">purchase_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">purchase_year</span> <span class="o">&lt;=</span> <span class="n">year</span> <span class="o">&lt;</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">lpSum</span><span class="p">([</span><span class="n">buy_vars</span><span class="p">[(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)])</span> <span class="o">-</span> 
+                <span class="n">lpSum</span><span class="p">([</span><span class="n">sell_vars</span><span class="p">[(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span><span class="p">])</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<h2 id="solution-and-analysis">Solution and Analysis</h2>
+
+<p>The model was solved using PuLP’s CBC solver:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">solver</span> <span class="o">=</span> <span class="n">PULP_CBC_CMD</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">timeLimit</span><span class="o">=</span><span class="mi">1800</span><span class="p">,</span> <span class="n">gapRel</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">model</span><span class="p">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The solver output provided the following results:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Result - Optimal solution found
+
+Objective value:                19442586.70295466
+Enumerated nodes:               0
+Total iterations:               130
+Time (CPU seconds):             0.09
+Time (Wallclock seconds):       0.09
+</code></pre></div></div>
+
+<p>This output indicates that:</p>
+<ol>
+  <li>An optimal solution was found, representing the best possible fleet composition given our constraints.</li>
+  <li>The total cost over the 16-year period is approximately $19.4 million.</li>
+  <li>The solution was found efficiently (in 0.09 seconds) without requiring branching in the branch-and-bound algorithm.</li>
+</ol>
+
+<p>The optimal solution provides a year-by-year plan for vehicle purchases, usage, and sales that minimizes total cost while meeting demand and emission constraints. This plan can serve as a roadmap for fleet managers to guide their decarbonization efforts.</p>
+
+<p>Looking back, I’m satisfied with the approach I took, but I’m also curious about other potential methods:</p>
+<ul>
+  <li>Could a different objective function, perhaps one that more explicitly balances cost and emissions, yield interesting insights?</li>
+  <li>How would the results change if we incorporated uncertainty in fuel prices or demand?</li>
+  <li>Might there be heuristic approaches that could find good (if not optimal) solutions more quickly for even larger problem instances?</li>
+</ul>
+
+<p>I’m eager to learn more about how others approached this problem.</p>]]></content><author><name>Vinay</name></author><category term="hackathon" /><category term="optimization" /><category term="sustainability" /><summary type="html"><![CDATA[Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector. This post is my attempt to document my approach.]]></summary></entry><entry><title type="html">Nested Biological Systems Visualization</title><link href="https://vinayk94.github.io//dailylog/journal/2024/08/10/nested-biological-systems-visualization/" rel="alternate" type="text/html" title="Nested Biological Systems Visualization" /><published>2024-08-10T00:00:00+00:00</published><updated>2024-08-10T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/08/10/nested-biological-systems-visualization</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/08/10/nested-biological-systems-visualization/"><![CDATA[<h1 id="nested-biological-systems-visualization">Nested Biological Systems Visualization</h1>
+
+<p>This interactive visualization demonstrates the complex interactions in nested biological systems, from cells to ecosystems.</p>
+
+<iframe src="https://vinayk94.github.io/nested-systems-viz" width="100%" height="800px" frameborder="0"></iframe>
+
+<p><a href="https://vinayk94.github.io/nested-systems-viz">View full page version</a></p>
+
+<h2 id="about-this-visualization">About this Visualization</h2>
+
+<h1 id="nested-biological-systems-visualization-1">Nested Biological Systems Visualization</h1>
+
+<h2 id="overview">Overview</h2>
+
+<p>This project is an interactive visualization of nested biological systems, demonstrating the complex interactions and interdependencies between different levels of biological organization: from cells to ecosystems. It’s built using React and SVG, providing a dynamic and engaging way to explore how lower-level biological processes contribute to higher-level outcomes.</p>
+
+<h2 id="key-features">Key Features</h2>
+
+<ul>
+  <li>Hierarchical representation of four biological levels: Cells, Organisms, Species, and Ecosystem</li>
+  <li>Dynamic simulation of entity health, resources, and populations</li>
+  <li>Color-coded visualization of entity health and activity</li>
+  <li>Interactive hover functionality for detailed entity information</li>
+  <li>Simulation of resource competition, adaptation, extinction, and evolution</li>
+</ul>
+
+<h2 id="system-interactions">System Interactions</h2>
+
+<h3 id="cell-level">Cell Level</h3>
+<ul>
+  <li>Entities: Individual cells</li>
+  <li>Properties: Health, Resource</li>
+  <li>Optimization: Energy efficiency and reproduction</li>
+  <li>Interactions: Cells manage resources and adapt to a simulated environmental cycle</li>
+</ul>
+
+<h3 id="organism-level">Organism Level</h3>
+<ul>
+  <li>Entities: Individual organisms</li>
+  <li>Properties: Health</li>
+  <li>Optimization: Survival and growth</li>
+  <li>Interactions: Organism health is determined by the collective health of its constituent cells</li>
+</ul>
+
+<h3 id="species-level">Species Level</h3>
+<ul>
+  <li>Entities: Different species</li>
+  <li>Properties: Health, Population</li>
+  <li>Optimization: Population growth and genetic diversity</li>
+  <li>Interactions: Species can go extinct if population drops to zero, and new species can evolve</li>
+</ul>
+
+<h3 id="ecosystem-level">Ecosystem Level</h3>
+<ul>
+  <li>Entities: The overall ecosystem</li>
+  <li>Properties: Health, Biodiversity</li>
+  <li>Optimization: Biodiversity and stability</li>
+  <li>Interactions: Ecosystem health depends on the number and health of species</li>
+</ul>
+
+<h2 id="code-structure">Code Structure</h2>
+
+<p>The main component, <code class="language-plaintext highlighter-rouge">FocusedNestedSystemsViz</code>, manages the state and rendering of the visualization:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">initialLevels</code>: Defines the initial state and behavior of each biological level</li>
+  <li><code class="language-plaintext highlighter-rouge">useEffect</code> hook: Manages the simulation loop, updating entity states over time</li>
+  <li><code class="language-plaintext highlighter-rouge">renderEntities</code> and <code class="language-plaintext highlighter-rouge">renderLevel</code> functions: Handle the SVG rendering of entities and levels</li>
+  <li>Interactive elements: Hover functionality and pause/resume button</li>
+</ul>
+
+<h2 id="mathematical-model">Mathematical Model</h2>
+
+<p>Each level’s entities are updated based on their current state and the state of the level below:</p>
+
+<ul>
+  <li>Cell health = previous health + resource factor + environmental factor</li>
+  <li>Organism health = previous health + cell health factor</li>
+  <li>Species health = previous health + organism health factor</li>
+  <li>Species population = previous population + health factor</li>
+  <li>Ecosystem health = weighted average of previous health and species health</li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
+
+<ol>
+  <li>Clone the repository</li>
+  <li>Install dependencies with <code class="language-plaintext highlighter-rouge">npm install</code></li>
+  <li>Run the development server with <code class="language-plaintext highlighter-rouge">npm start</code></li>
+  <li>Open <a href="http://localhost:3000">http://localhost:3000</a> to view it in the browser</li>
+</ol>
+
+<h2 id="customization">Customization</h2>
+
+<p>You can customize various aspects of the simulation:</p>
+
+<ul>
+  <li>Adjust the number of entities at each level in the <code class="language-plaintext highlighter-rouge">initialLevels</code> object</li>
+  <li>Modify the <code class="language-plaintext highlighter-rouge">calculate</code> functions to change how entities interact and evolve</li>
+  <li>Alter the color schemes in the <code class="language-plaintext highlighter-rouge">colorSchemes</code> object for different visual representations</li>
+</ul>
+
+<h2 id="future-enhancements">Future Enhancements</h2>
+
+<ul>
+  <li>Add user controls to adjust simulation parameters</li>
+  <li>Implement more complex inter-entity interactions within levels</li>
+  <li>Create detailed views for examining specific entities or levels</li>
+  <li>Add time-series data visualization for long-term trend analysis</li>
+</ul>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[Nested Biological Systems Visualization]]></summary></entry><entry><title type="html">Does culture matter ?</title><link href="https://vinayk94.github.io//dailylog/journal/2024/06/02/culture/" rel="alternate" type="text/html" title="Does culture matter ?" /><published>2024-06-02T00:00:00+00:00</published><updated>2024-06-02T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/06/02/culture</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/06/02/culture/"><![CDATA[<p>It feels like our ancestors had a common awareness of the importance of freedom and lived everyday to work towards it.
+Currently, we live in an age of abundance, it is hard to feel anything other than primal needs, and these have become larger economic activities as we see in the present day world.</p>
+
+<p>It feels like to to feel anything real, to really live a day, where we are willing to work, being aware of the current world is essential. Unless, you know what is needed, you will not try hard enough to collect the truth and work in its framework.
+But, looks like, the inability to put effort into any of this, prompts us to live with lies, and we keep saying the same lie to ourselves, until it becomes the truth for you.</p>
+
+<p>Also, it should be default in a culture that it suggests you to work, in fact, work hard to any extent.
+Hard work doesnot mean the rote work, but work that uncovers new knowledge to you.
+A person who has taken shortcuts all through life, has nothing uncovered by himself, except the instructions for taking those shortcuts. And this person cannot propagate any new information to his kids, on how to deal with life.</p>
+
+<p>I strongly believe that the will to work hard should be default in any culture. 
+Earlier the will to work used to stem from survival instinct,when humans were in hunting mode. 
+Then, as humans started to practice agriculture, the will to work hard comes from the goal to survive for longer time spans.</p>
+
+<p>Today, most of our needs are being met and we are slowly losing the will to work hard.
+The reason to work hard even till 40’s, 50’s is not to become rich, but rather to avoid falling into depression and losing sense of self-worth. If you still have the will to work and can figure out things to do, you will still have the capacity to reward yourself from increasing your self worth by doing some work. It is most crucial in the current generation, where there is too much redundant information out there, but we do not posses proper framework to make use of that information. The only default framework every human has is to compare oneself relatively to others and act on it. But, this framework is not at all useful, as it mostly puts you into traps, if the reference is wrong. And when there is too much information, there are high chances of choosing wrong references. At the same time, if you have this culture, where people lost the will to work, to ask relevant question and your will to work only comes by comparing yourself to others, you are most prone to depression, as you have not built any mental resilience by learning about the real world.</p>
+
+<p>That is the reason, hardship is a feature not a bug. Ofcourse unless you are absorbing knowledge from every hardship, it is waste.
+It introduces you to many things in life.
+More than anything, it introduces you to your self, you understand your limitations better.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[It feels like our ancestors had a common awareness of the importance of freedom and lived everyday to work towards it. Currently, we live in an age of abundance, it is hard to feel anything other than primal needs, and these have become larger economic activities as we see in the present day world.]]></summary></entry><entry><title type="html">What are you ?</title><link href="https://vinayk94.github.io//dailylog/journal/2024/03/11/what-are-you/" rel="alternate" type="text/html" title="What are you ?" /><published>2024-03-11T00:00:00+00:00</published><updated>2024-03-11T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/03/11/what-are-you</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/03/11/what-are-you/"><![CDATA[<p>Most often, I stumble upon upon the question “what am I ?” <br />
+Our earlier definition was that it comprises of what we do, what career we get into, what possessions we secure and so on. <br />
+But, more and more,it occurs to me that, we are what we are honest about. <br />
+Unless, we are honest about something, we can’t think new, we cant act new, and we are just those, who chose to be clones of others.<br />
+How can we expect to know the truth of anything, unless we are honest about it ? It goes without saying that finding new information, learning something new, creating something new, requires effort. But, even to make ourselves conducive to effort, we need to be honest with ourselves.<br />
+<br />
+I really do not understand a culture, where people are being encouraged to go for the paths which are less effort and offer more return. I just can’t fathom that one could really learn, understand and experience truth, if they didn’t care to put effort into it. I wonder how many lives this culture had been creating, where a person is capped to have a limited set of experiennces in life and worse, they are already predetermined. 
+<br />
+<br />
+Can you call it a life if you are on a determined path ? If so, what would you use the fruits of this deterministic life for ? Would you invest that again into a determined investment ?  I guess so, because, as you never chose something with uncertainty, you never learn or have the experience /courage to move ahead with less knowledge. If you are participating in this perpetual determinsitic world, what are you doing ? and hence the question <strong>WHAT ARE YOU ?</strong> Are you a bot, if so for whom ? <br />
+<br />
+Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture’s information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?<br /></p>
+
+<p>Just to be clear, I dont think am eligible to comment on those nations, I have a huge amount of respect to them and their people are one of the most aware and responsible citizens that I have met. Its just feels sad to see such nations with such great cultures, decline and I strongly wish that they grow more aggresively and healthily. <br /></p>
+
+<p><strong>If a culture promotes a deterministic world, in no time, they stop being honest with themselves and will cease being relevant to others. Thats the cost of honesty, for a country, for a culture, and for a person.</strong></p>
+
+<p><br />
+It feels such a waste of time, if we are not daring to experience anything truly and am afraid that our time will be gone, before we are honest about anything in life.<br /></p>
+
+<p>When I look at some of the best directions, watch best acting, read and hear best music, it makes me so humble that they were able to create something truly new that didn’t exist before. And most often, these people speak very honestly about it. They do not care about others opinions. They just wanted to express themselves.
+They just wanted to create something, which they have been having real feelings/thoughts and expressed themselves, by going to any extent to stay true to themselves.<br /></p>
+
+<p>It is such a surreal experience to watch someone express truly, be it cinema, music, technology etc.<br />
+I wonder, if something like this could be created if they were not honest with themselves. <br />
+They are their honesty…</p>
+
+<p>A man’s life is just a dot product of his honesty dimension and other areas of life.<br />
+A person like Grigori Perelman is honest with maths and he is a mathematician. <br /></p>
+
+<p>Generally, a person is more inclined to be honest with his family and that may be the reason, older people stress upon family when asked what’s important in life. It could be that, it’s the real experience that moves us, as it uncovers some unique and mostly true information. We can experience something for real only when we are being honest, Otherwise, we are just trying to imitate the feelings published by others. E.g. trying to experience something at a place just because some one posted it on social media. <br /></p>
+
+<p><strong>Honesty dissolves our ego, which is just an image that we hold of our past, and equips us with least biased lens to look at the current situation.</strong><br /></p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[Most often, I stumble upon upon the question “what am I ?” Our earlier definition was that it comprises of what we do, what career we get into, what possessions we secure and so on. But, more and more,it occurs to me that, we are what we are honest about. Unless, we are honest about something, we can’t think new, we cant act new, and we are just those, who chose to be clones of others. How can we expect to know the truth of anything, unless we are honest about it ? It goes without saying that finding new information, learning something new, creating something new, requires effort. But, even to make ourselves conducive to effort, we need to be honest with ourselves. I really do not understand a culture, where people are being encouraged to go for the paths which are less effort and offer more return. I just can’t fathom that one could really learn, understand and experience truth, if they didn’t care to put effort into it. I wonder how many lives this culture had been creating, where a person is capped to have a limited set of experiennces in life and worse, they are already predetermined. Can you call it a life if you are on a determined path ? If so, what would you use the fruits of this deterministic life for ? Would you invest that again into a determined investment ? I guess so, because, as you never chose something with uncertainty, you never learn or have the experience /courage to move ahead with less knowledge. If you are participating in this perpetual determinsitic world, what are you doing ? and hence the question WHAT ARE YOU ? Are you a bot, if so for whom ? Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture’s information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?]]></summary></entry><entry><title type="html">What are your limits that your are fighting now ?</title><link href="https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits/" rel="alternate" type="text/html" title="What are your limits that your are fighting now ?" /><published>2024-03-05T00:00:00+00:00</published><updated>2024-03-05T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits/"><![CDATA[<p>My current limitation is target oriented working. <br />
+I go awry if I’m not progressing and the deadline is imminnent.<br />
+I do not know how to handle, when the wagon stops, like how to proceed and etc.<br />
+I mostly slip into other distractions squandering time. <br />
+<br />
+My innerthoughts says to me that, I’m better off working than hurting myself by wasting time.
+That I need to overcome these blocks, but I still cannot handle it.</p>]]></content><author><name>Vinay</name></author><summary type="html"><![CDATA[My current limitation is target oriented working. I go awry if I’m not progressing and the deadline is imminnent. I do not know how to handle, when the wagon stops, like how to proceed and etc. I mostly slip into other distractions squandering time. My innerthoughts says to me that, I’m better off working than hurting myself by wasting time. That I need to overcome these blocks, but I still cannot handle it.]]></summary></entry></feed>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Projects | Vinay’s Blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Projects" />
+<meta name="author" content="Vinay" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://vinayk94.github.io//dailylog/projects/" />
+<meta property="og:url" content="https://vinayk94.github.io//dailylog/projects/" />
+<meta property="og:site_name" content="Vinay’s Blog" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Projects" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"Vinay"},"headline":"Projects","url":"https://vinayk94.github.io//dailylog/projects/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/dailylog/assets/css/style.css?v=132088be2ca153e1aa264f4b9f262927671a38e3">
+    <!-- Custom head content -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  </head>
+  <body>
+    <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="/dailylog/">Vinay&#39;s Blog</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+        <div class="trigger">
+          <a class="page-link" href="/dailylog/about">About</a>
+          <a class="page-link" href="/dailylog/posts">Posts</a>
+          <a class="page-link" href="/dailylog/projects">Projects</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <div class="wrapper">
+      <section>
+      <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Projects</h1>
+  </header>
+
+  <div class="post-content">
+    <h1>My Projects</h1>
+
+<div id="projects-container">
+  <!-- Projects will be dynamically inserted here -->
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+
+const username = 'vinayk94';
+const monthsToFetch = 18;
+
+async function fetchProjects() {
+  try {
+    // Fetch data from GitHub API
+    const response = await axios.get(`https://api.github.com/users/${username}/repos?per_page=100`);
+
+    // Log fetched repositories to check if data is received correctly
+    console.log("Repos fetched:", response.data);
+
+    const repos = response.data;
+
+    // Sort repositories by their 'updated_at' date in descending order (most recent first)
+    repos.sort((a, b) => new Date(b.updated_at) - new Date(a.updated_at));
+    const projectsContainer = document.getElementById('projects-container');
+
+    // Log to check if the container exists
+    console.log("Projects container:", projectsContainer);
+
+    for (const repo of repos) {
+      const lastUpdated = new Date(repo.updated_at);
+      const monthsAgo = (new Date() - lastUpdated) / (1000 * 60 * 60 * 24 * 30);
+
+      if (monthsAgo <= monthsToFetch) {
+        // Log the repository being added
+        console.log("Adding project:", repo.name);
+
+        // Create project element and insert it into the page
+        const projectElement = document.createElement('div');
+        projectElement.className = 'project';
+        projectElement.innerHTML = `
+          <h2><a href="${repo.html_url}" target="_blank">${repo.name}</a></h2>  <!-- Repository name is now hyperlinked -->
+          <p>${repo.description || 'No description available.'}</p>
+          <p>Last updated: ${lastUpdated.toDateString()}</p>
+          <p>Languages: ${repo.language || 'Not specified'}</p>
+          ${repo.homepage ? `<p><a href="${repo.homepage}" target="_blank">Live Demo</a></p>` : ''}
+        `;
+        projectsContainer.appendChild(projectElement);
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching projects:', error);
+    document.getElementById('projects-container').innerHTML = '<p>Error loading projects. Please try again later.</p>';
+  }
+}
+
+// Call the function to fetch and display projects
+fetchProjects();
+</script>
+
+<style>
+/* Add some styling for your project elements */
+.project {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project-links {
+  margin: 10px 0;
+}
+
+.project-tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  margin-right: 5px;
+  background-color: #f1f8ff;
+  color: #0366d6;
+  border-radius: 3px;
+  font-size: 12px;
+}
+</style>
+
+  </div>
+
+</article>
+
+      </section>
+    </div>
+    <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>Vinay&#39;s Blog - <a href="mailto:bheemreddy.vinay@gmail.com">bheemreddy.vinay@gmail.com</a></p>
+        </div>
+        <div class="footer-github">
+          <a href="https://github.com/vinayk94" target="_blank" rel="noopener noreferrer">
+            <svg class="svg-icon"><use xlink:href="/dailylog/assets/minima-social-icons.svg#github"></use></svg>
+            vinayk94
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>Created with GitHub Pages and Jekyll. <a href="https://github.com/vinayk94/dailylog" target="_blank" rel="noopener noreferrer">Source</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+</html>

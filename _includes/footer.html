@@ -1,0 +1,19 @@
+<footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>{{ site.title | escape }} - <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+        </div>
+        <div class="footer-github">
+          <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">
+            <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+            {{ site.github_username }}
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>Created with GitHub Pages and Jekyll. <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank" rel="noopener noreferrer">Source</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  

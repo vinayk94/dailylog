@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Reflections on the Shell.ai Hackathon 2024 | Vinay’s Blog</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Reflections on the Shell.ai Hackathon 2024" />
+<meta name="author" content="Vinay" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector. This post is my attempt to document my approach." />
+<meta property="og:description" content="Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector. This post is my attempt to document my approach." />
+<link rel="canonical" href="https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/" />
+<meta property="og:url" content="https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/" />
+<meta property="og:site_name" content="Vinay’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-08-12T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Reflections on the Shell.ai Hackathon 2024" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Vinay"},"dateModified":"2024-08-12T00:00:00+00:00","datePublished":"2024-08-12T00:00:00+00:00","description":"Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector. This post is my attempt to document my approach.","headline":"Reflections on the Shell.ai Hackathon 2024","mainEntityOfPage":{"@type":"WebPage","@id":"https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/"},"url":"https://vinayk94.github.io//dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="stylesheet" href="/dailylog/assets/css/style.css?v=132088be2ca153e1aa264f4b9f262927671a38e3">
+    <!-- Custom head content -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+  </head>
+  <body>
+    <header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="/dailylog/">Vinay&#39;s Blog</a>
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+        <div class="trigger">
+          <a class="page-link" href="/dailylog/about">About</a>
+          <a class="page-link" href="/dailylog/posts">Posts</a>
+          <a class="page-link" href="/dailylog/projects">Projects</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+    <div class="wrapper">
+      <section>
+      <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Reflections on the Shell.ai Hackathon 2024</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2024-08-12T00:00:00+00:00" itemprop="datePublished">Aug 12, 2024
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Recently, I participated in the Shell.ai Hackathon for Sustainable and Affordable Energy 2024. The challenge focused on optimizing fleet decarbonization strategies, a crucial step towards achieving net-zero emissions in the transportation sector.  This post is my attempt to document my approach.</p>
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>The hackathon presented us with a complex real-world problem: how to transition a fleet of vehicles to lower-emission alternatives while balancing operational costs, meeting demand, and adhering to increasingly strict emission limits over a 16-year period (2023-2038).</p>
+
+<p>Key aspects of the problem included:</p>
+<ul>
+  <li>Multiple vehicle types (Diesel, LNG, BEV) with different characteristics</li>
+  <li>Varying fuel types, costs, and associated emissions</li>
+  <li>Yearly demand that must be satisfied for different vehicle sizes and distance requirements</li>
+  <li>Carbon emission limits that decrease over time</li>
+  <li>Vehicle lifecycle constraints (10-year lifespan, purchase/sell timing)</li>
+</ul>
+
+<p>The challenge was not just about finding the cheapest or lowest-emission solution, but about finding an optimal balance that could realistically be implemented by fleet operators.</p>
+
+<h2 id="linear-programming-and-pulp">Linear Programming and PuLP</h2>
+
+<p>After analyzing the problem, I decided to approach it using linear programming. Here’s why:</p>
+
+<ol>
+  <li>The problem involves optimizing a linear objective (total cost) subject to linear constraints (demand satisfaction, emission limits, etc.).</li>
+  <li>Decision variables (number of vehicles to buy, use, or sell) are inherently integer-valued, making it a mixed-integer linear programming (MILP) problem.</li>
+  <li>Linear programming is well-suited for problems with many variables and constraints, which was the case here with multiple years, vehicle types, and operational constraints.</li>
+</ol>
+
+<p>I chose PuLP as the tool to implement this linear programming model as its an open-source library to quickly make protypes with Python.</p>
+
+<h2 id="decision-variables">Decision Variables</h2>
+
+<p>The problem revolves around three key decisions: buying, using, and selling vehicles. Therefore, I defined the following decision variables:</p>
+
+<ol>
+  <li>$buy_{y,v}$: Number of vehicles of type $v$ bought in year $y$</li>
+  <li>$use_{y,v}$: Number of vehicles of type $v$ used in year $y$</li>
+  <li>$sell_{y,v}$: Number of vehicles of type $v$ sold in year $y$</li>
+</ol>
+
+<p>These variables are crucial as they allow us to track the fleet’s composition and usage over time. They directly represent the decisions a fleet manager would make each year.</p>
+
+<p>In PuLP, these variables are implemented as follows:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">buy_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"buy"</span><span class="p">,</span> 
+                            <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                            <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+
+<span class="n">use_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"use"</span><span class="p">,</span> 
+                            <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                            <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+
+<span class="n">sell_vars</span> <span class="o">=</span> <span class="n">LpVariable</span><span class="p">.</span><span class="n">dicts</span><span class="p">(</span><span class="s">"sell"</span><span class="p">,</span> 
+                             <span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span> <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]],</span> 
+                             <span class="n">lowBound</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">cat</span><span class="o">=</span><span class="n">LpInteger</span><span class="p">)</span>
+</code></pre></div></div>
+<h2 id="objective-function">Objective Function</h2>
+
+<p>The objective is to minimize the total cost over the planning horizon. This includes several cost components:</p>
+
+\[\text{Minimize } C_{total} = \sum_{y=2023}^{2038} (C_{buy}^y + C_{ins}^y + C_{mnt}^y + C_{fuel}^y - C_{sell}^y)\]
+
+<p>Let’s break down each cost component:</p>
+
+<h3 id="1-buying-costs">1. Buying Costs</h3>
+
+<p>Buying costs represent the capital expenditure for fleet renewal. This is crucial because transitioning to lower-emission vehicles often requires significant upfront investment.</p>
+
+\[C_{buy}^y = \sum_{v \in V} buy_{y,v} \cdot cost_v\]
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">buying_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="2-insurance-costs">2. Insurance Costs</h3>
+
+<p>Insurance is an ongoing operational cost that varies with the age and value of vehicles. Including it ensures we account for the full cost of ownership.</p>
+
+\[C_{ins}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot ins_{y-y_p}^v\]
+
+<p>Where $fleet_{y,v}$ is the number of vehicles of type $v$ in the fleet in year $y$, and $ins_{y-y_p}^v$ is the insurance cost percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">insurance_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Insurance Cost %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="3-maintenance-costs">3. Maintenance Costs</h3>
+
+<p>Maintenance costs typically increase as vehicles age. This component encourages the model to balance between keeping older, fully depreciated vehicles and investing in new, potentially more efficient ones.</p>
+
+\[C_{mnt}^y = \sum_{v \in V} fleet_{y,v} \cdot cost_v \cdot mnt_{y-y_p}^v\]
+
+<p>Where $mnt_{y-y_p}^v$ is the maintenance cost percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">maintenance_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Maintenance Cost %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="4-fuel-costs">4. Fuel Costs</h3>
+
+<p>Fuel costs are a major part of operational expenses and directly tied to emissions. This component drives the model to consider more fuel-efficient or alternative fuel vehicles.</p>
+
+\[C_{fuel}^y = \sum_{v \in V} use_{y,v} \cdot cons_v \cdot fuel\_cost_{y,f_v} \cdot range_v\]
+
+<p>Where $cons_v$ is the fuel consumption of vehicle $v$, $fuel_cost_{y,f_v}$ is the cost of fuel for vehicle $v$ in year $y$, and $range_v$ is the yearly range of the vehicle.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fuel_costs</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Consumption (unit_fuel/km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Fuel'</span><span class="p">]</span> <span class="o">==</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Fuel'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">),</span> <span class="s">'Cost ($/unit_fuel)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="5-resale-value">5. Resale Value</h3>
+
+<p>Including resale value encourages the model to optimize the timing of vehicle replacements, balancing the benefits of keeping fully depreciated vehicles against the advantages of newer, potentially more efficient models.</p>
+
+\[C_{sell}^y = \sum_{v \in V} sell_{y,v} \cdot cost_v \cdot resale_{y-y_p}^v\]
+
+<p>Where $resale_{y-y_p}^v$ is the resale value percentage for a vehicle of age $y-y_p$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">resale_value</span> <span class="o">=</span> <span class="n">lpSum</span><span class="p">([</span>
+    <span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Cost ($)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span>
+    <span class="n">get_cost_profile_value</span><span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span> <span class="s">'Resale Value %'</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span>
+<span class="p">])</span>
+</code></pre></div></div>
+
+<h2 id="constraints">Constraints</h2>
+
+<h3 id="1-demand-satisfaction">1. Demand Satisfaction</h3>
+
+<p>This constraint ensures that the fleet can meet all transportation demands each year, which is crucial for maintaining business operations.</p>
+
+\[\sum_{v \in V_{s,d}} use_{y,v} \cdot range_v \geq demand_{y,s,d} \quad \forall y,s,d\]
+
+<p>Where $V_{s,d}$ is the set of vehicles of size $s$ that can cover distance $d$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">demand</span><span class="p">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span>
+        <span class="n">use_vars</span><span class="p">[(</span><span class="n">row</span><span class="p">[</span><span class="s">'Year'</span><span class="p">],</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s">'Year'</span><span class="p">],</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span> <span class="ow">and</span>
+           <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Size'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">row</span><span class="p">[</span><span class="s">'Size'</span><span class="p">]</span> <span class="ow">and</span> 
+           <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Distance'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">row</span><span class="p">[</span><span class="s">'Distance'</span><span class="p">]</span>
+    <span class="p">])</span> <span class="o">&gt;=</span> <span class="n">row</span><span class="p">[</span><span class="s">'Demand (km)'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="2-carbon-emissions">2. Carbon Emissions</h3>
+
+<p>This constraint drives the decarbonization aspect of the problem, forcing the model to transition to lower-emission vehicles over time.</p>
+
+\[\sum_{v \in V} use_{y,v} \cdot cons_v \cdot emission_{f_v} \cdot range_v \leq emission\_limit_y \quad \forall y\]
+
+<p>Where $emission_{f_v}$ is the emission factor for the fuel used by vehicle $v$.</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="n">carbon_emissions</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]:</span>
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span>
+        <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">*</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Consumption (unit_fuel/km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> 
+        <span class="n">fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Fuel'</span><span class="p">]</span> <span class="o">==</span> <span class="n">vehicles_fuels</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles_fuels</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Fuel'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">fuels</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">),</span> <span class="s">'Emissions (CO2/unit_fuel)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> 
+        <span class="n">vehicles</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span> <span class="o">==</span> <span class="n">v_id</span><span class="p">,</span> <span class="s">'Yearly range (km)'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+        <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">use_vars</span>
+    <span class="p">])</span> <span class="o">&lt;=</span> <span class="n">carbon_emissions</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">carbon_emissions</span><span class="p">[</span><span class="s">'Year'</span><span class="p">]</span> <span class="o">==</span> <span class="n">year</span><span class="p">,</span> <span class="s">'Carbon emission CO2/kg'</span><span class="p">].</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</code></pre></div></div>
+
+<h3 id="3-vehicle-lifecycle">3. Vehicle Lifecycle</h3>
+
+<p>These constraints model the 10-year lifecycle of vehicles, ensuring they are only bought in their designated purchase year and sold by the end of their useful life.</p>
+
+<p>\(use_{y,v} = sell_{y,v} = 0, \quad \forall y &lt; y_p \text{ or } y \geq y_p + 10\)
+\(buy_{y,v} = 0, \quad \forall y \neq y_p\)
+\(\sum_{y=y_p}^{y_p+9} sell_{y,v} = \sum_{y=y_p}^{y_p+9} buy_{y,v} \quad \forall v\)</p>
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]:</span>
+    <span class="n">purchase_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+    <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">year</span> <span class="o">&lt;</span> <span class="n">purchase_year</span> <span class="ow">or</span> <span class="n">year</span> <span class="o">&gt;=</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">use_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+
+        <span class="k">if</span> <span class="n">year</span> <span class="o">!=</span> <span class="n">purchase_year</span><span class="p">:</span>
+            <span class="n">model</span> <span class="o">+=</span> <span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">==</span> <span class="mi">0</span>
+
+    <span class="n">model</span> <span class="o">+=</span> <span class="n">lpSum</span><span class="p">([</span><span class="n">sell_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span><span class="p">])</span> <span class="o">==</span> \
+             <span class="n">lpSum</span><span class="p">([</span><span class="n">buy_vars</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">buy_vars</span><span class="p">])</span>
+</code></pre></div></div>
+
+<h3 id="4-fleet-size-calculation">4. Fleet Size Calculation</h3>
+
+<p>This constraint keeps track of the fleet composition, which is necessary for calculating insurance and maintenance costs.</p>
+
+\[fleet_{y,v} = \sum_{i=y_p}^{y} (buy_{i,v} - sell_{i,v}) \quad \forall y,v\]
+
+<p>In code:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">fleet_size</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2023</span><span class="p">,</span> <span class="mi">2039</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">v_id</span> <span class="ow">in</span> <span class="n">vehicles</span><span class="p">[</span><span class="s">'ID'</span><span class="p">]:</span>
+        <span class="n">purchase_year</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">v_id</span><span class="p">.</span><span class="n">split</span><span class="p">(</span><span class="s">'_'</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">purchase_year</span> <span class="o">&lt;=</span> <span class="n">year</span> <span class="o">&lt;</span> <span class="n">purchase_year</span> <span class="o">+</span> <span class="mi">10</span><span class="p">:</span>
+            <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">lpSum</span><span class="p">([</span><span class="n">buy_vars</span><span class="p">[(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)])</span> <span class="o">-</span> 
+                <span class="n">lpSum</span><span class="p">([</span><span class="n">sell_vars</span><span class="p">[(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">purchase_year</span><span class="p">,</span> <span class="n">year</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)</span> <span class="ow">in</span> <span class="n">sell_vars</span><span class="p">])</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">fleet_size</span><span class="p">[(</span><span class="n">year</span><span class="p">,</span> <span class="n">v_id</span><span class="p">)]</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div></div>
+
+<h2 id="solution-and-analysis">Solution and Analysis</h2>
+
+<p>The model was solved using PuLP’s CBC solver:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">solver</span> <span class="o">=</span> <span class="n">PULP_CBC_CMD</span><span class="p">(</span><span class="n">msg</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">timeLimit</span><span class="o">=</span><span class="mi">1800</span><span class="p">,</span> <span class="n">gapRel</span><span class="o">=</span><span class="mf">0.01</span><span class="p">)</span>
+<span class="n">model</span><span class="p">.</span><span class="n">solve</span><span class="p">(</span><span class="n">solver</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>The solver output provided the following results:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Result - Optimal solution found
+
+Objective value:                19442586.70295466
+Enumerated nodes:               0
+Total iterations:               130
+Time (CPU seconds):             0.09
+Time (Wallclock seconds):       0.09
+</code></pre></div></div>
+
+<p>This output indicates that:</p>
+<ol>
+  <li>An optimal solution was found, representing the best possible fleet composition given our constraints.</li>
+  <li>The total cost over the 16-year period is approximately $19.4 million.</li>
+  <li>The solution was found efficiently (in 0.09 seconds) without requiring branching in the branch-and-bound algorithm.</li>
+</ol>
+
+<p>The optimal solution provides a year-by-year plan for vehicle purchases, usage, and sales that minimizes total cost while meeting demand and emission constraints. This plan can serve as a roadmap for fleet managers to guide their decarbonization efforts.</p>
+
+<p>Looking back, I’m satisfied with the approach I took, but I’m also curious about other potential methods:</p>
+<ul>
+  <li>Could a different objective function, perhaps one that more explicitly balances cost and emissions, yield interesting insights?</li>
+  <li>How would the results change if we incorporated uncertainty in fuel prices or demand?</li>
+  <li>Might there be heuristic approaches that could find good (if not optimal) solutions more quickly for even larger problem instances?</li>
+</ul>
+
+<p>I’m eager to learn more about how others approached this problem.</p>
+
+  </div><a class="u-url" href="/dailylog/journal/2024/08/12/shell-ai-hackathon-reflection/" hidden></a>
+</article>
+
+      </section>
+    </div>
+    <footer class="site-footer">
+    <div class="wrapper">
+      <div class="footer-content">
+        <div class="footer-info">
+          <p>Vinay&#39;s Blog - <a href="mailto:bheemreddy.vinay@gmail.com">bheemreddy.vinay@gmail.com</a></p>
+        </div>
+        <div class="footer-github">
+          <a href="https://github.com/vinayk94" target="_blank" rel="noopener noreferrer">
+            <svg class="svg-icon"><use xlink:href="/dailylog/assets/minima-social-icons.svg#github"></use></svg>
+            vinayk94
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>Created with GitHub Pages and Jekyll. <a href="https://github.com/vinayk94/dailylog" target="_blank" rel="noopener noreferrer">Source</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  </body>
+</html>
