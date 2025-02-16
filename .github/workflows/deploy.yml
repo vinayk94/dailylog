@@ -11,26 +11,32 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
-      - name: Install Ruby manually
+      - name: Install ruby-build and Dependencies
         run: |
           sudo apt update
           sudo apt install -y git build-essential libssl-dev libreadline-dev zlib1g-dev
-          sudo apt install -y ruby-full
-          ruby -v  # Verify installation
+          git clone https://github.com/rbenv/ruby-build.git /tmp/ruby-build
+          sudo /tmp/ruby-build/install.sh
 
-      - name: Set up Ruby
+      - name: Manually Install Ruby in Runner Tool Cache
+        run: |
+          sudo mkdir -p /opt/hostedtoolcache/Ruby/3.1.4/x64
+          sudo ruby-build 3.1.4 /opt/hostedtoolcache/Ruby/3.1.4/x64
+          sudo touch /opt/hostedtoolcache/Ruby/3.1.4/x64.complete
+
+      - name: Set up Ruby (Should Now Work)
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'  #  (adjust if needed)
-          bundler-cache: true  # Caches 'bundle install' results for faster future builds
+          ruby-version: '3.1'
+          bundler-cache: true
 
       - name: Install dependencies
         run: |
-          gem install bundler
-          bundle install
-          
+          gem install bundler -v 2.4.22
+          bundle install --jobs 4 --retry 3
+
       - name: Check Token Access
         run: |
           if [ -z "${{ secrets.GH_TOKEN }}" ]; then
@@ -38,10 +44,6 @@ jobs:
           else
             echo "GH_TOKEN is available."
           fi
-
-
-
-
 
       - name: Fetch GitHub Projects
         run: |
