@@ -13,7 +13,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-22.04
-    timeout-minutes: 10  # Add timeout to prevent endless runs
+    timeout-minutes: 10  
     
     steps:
       - name: Checkout repository
