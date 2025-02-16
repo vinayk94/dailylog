@@ -43,7 +43,5 @@ paginate: 10
 paginate_path: "/posts/page:num/"
 #markdown: GFM
 
-runs-on: ubuntu-22.04
-
 # Other settings
 show_excerpts: true
