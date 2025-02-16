@@ -75,6 +75,7 @@ ERCOT (Electric Reliability Council of Texas) operates under a **fully deregulat
 
 ---
 ## **Summary:**
+
 ✅ **Nodal pricing includes transmission constraints, ensuring congestion is priced into LMPs.**  
 ✅ **Market and grid operations are integrated within ISOs, reducing complexity.**  
 🚨 **Europe relies on redispatching because market clearing does not consider intra-zonal constraints.**  
