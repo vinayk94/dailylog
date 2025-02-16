@@ -1,10 +1,8 @@
 ---
 layout: post
-title: "EU vs US Electricity Markets Strcuture"
+title: "European and U.S. Electricity Markets: Structure, Operations, and Efficiency"
 date: 2025-02-16
 ---
-
-# **Comparison of the European and U.S. Electricity Markets: Structure, Operations, and Efficiency**
 
 
 The European and U.S. electricity markets have evolved with **different regulatory, operational, and market structures**. This document explores the **intricacies of the EU electricity system**, detailing **market operations, redispatching, regulatory constraints, and pricing mechanisms**, followed by a **detailed comparison with the U.S. system**.
@@ -15,6 +13,7 @@ The European and U.S. electricity markets have evolved with **different regulato
 The European electricity market consists of multiple **independent national Transmission System Operators (TSOs) and Power Exchanges (PXs)**. Unlike the U.S., where ISOs/RTOs manage both market clearing and grid operations, **Europe separates market trading from grid operations**.
 
 #### **Key Market Entities in Europe**
+
 | Entity | Role | Example |
 |--------|------|---------|
 | **Power Exchanges (PXs)** | Run **day-ahead and intraday markets**, clear trades | EPEX Spot, Nord Pool, OMIE |
@@ -23,6 +22,7 @@ The European electricity market consists of multiple **independent national Tran
 | **Balancing Market Operators** | Handle **real-time imbalances** | TSOs & separate BSPs (Balancing Service Providers) |
 
 ### **Operations Timeline in Europe**
+
 | **Stage** | **Who Runs It?** | **What Happens?** | **Constraints Considered?** |
 |----------|----------------|-------------------|------------------------|
 | **Day-Ahead Market (DAM)** | PXs (EPEX Spot, Nord Pool) | Market clearing **via EUPHEMIA algorithm**, setting prices | **Cross-border transmission limits only** (no intra-zone constraints) |
@@ -45,7 +45,7 @@ The **balancing markets in Europe** operate with **specific trading blocks and s
 
 ---
 ## **Redispatching in Europe: Why It Exists and How It Works**
-### **Why Is Redispatching Needed?**
+
 Europe operates on **zonal pricing** rather than **nodal pricing** (used in the U.S.). PXs clear markets **only considering cross-border constraints**, but **do not account for intra-zonal transmission congestion**.
 
 | **Problem** | **Solution in EU (Redispatching)** | **Alternative in U.S. (Nodal Pricing)** |
@@ -61,7 +61,8 @@ Europe operates on **zonal pricing** rather than **nodal pricing** (used in the 
 ## **U.S. Electricity Market: Structure and Efficiency (Example: ERCOT)**
 ERCOT (Electric Reliability Council of Texas) operates under a **fully deregulated, real-time market structure** with no capacity market. 
 
-### **4.1 Trading Blocks and Settlement in ERCOT's Balancing Market**
+### **Trading Blocks and Settlement in ERCOT's Balancing Market**
+
 | **Market Segment** | **Timeframe** | **Who Participates?** | **Payment Structure** |
 |------------------|------------|----------------|----------------|
 | **Day-Ahead Market (DAM)** | 1 day ahead | Generators, loads, traders | Cleared market price |
