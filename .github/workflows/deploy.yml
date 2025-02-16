@@ -31,6 +31,13 @@ jobs:
             echo "GH_TOKEN is available."
           fi
 
+      - name: Install Ruby manually
+        run: |
+          sudo apt update
+          sudo apt install -y git build-essential libssl-dev libreadline-dev zlib1g-dev ruby-full
+          ruby -v
+
+
 
       - name: Fetch GitHub Projects
         run: |
