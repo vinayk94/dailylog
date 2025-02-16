@@ -1,4 +1,217 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://vinayk94.github.io//dailylog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinayk94.github.io//dailylog/" rel="alternate" type="text/html" /><updated>2025-02-16T18:03:06+00:00</updated><id>https://vinayk94.github.io//dailylog/feed.xml</id><title type="html">Vinay’s Blog</title><author><name>Vinay</name></author><entry><title type="html">European and U.S. Electricity Markets: Structure, Operations, and Efficiency</title><link href="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/" rel="alternate" type="text/html" title="European and U.S. Electricity Markets: Structure, Operations, and Efficiency" /><published>2025-02-16T00:00:00+00:00</published><updated>2025-02-16T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/">&lt;p&gt;The European and U.S. electricity markets have evolved with &lt;strong&gt;different regulatory, operational, and market structures&lt;/strong&gt;. This document explores the &lt;strong&gt;intricacies of the EU electricity system&lt;/strong&gt;, detailing &lt;strong&gt;market operations, redispatching, regulatory constraints, and pricing mechanisms&lt;/strong&gt;, followed by a &lt;strong&gt;detailed comparison with the U.S. system&lt;/strong&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.3">Jekyll</generator><link href="https://vinayk94.github.io//dailylog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://vinayk94.github.io//dailylog/" rel="alternate" type="text/html" /><updated>2025-02-16T18:04:20+00:00</updated><id>https://vinayk94.github.io//dailylog/feed.xml</id><title type="html">Vinay’s Blog</title><author><name>Vinay</name></author><entry><title type="html">European and U.S. Electricity Markets: Structure, Operations, and Efficiency</title><link href="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/" rel="alternate" type="text/html" title="European and U.S. Electricity Markets: Structure, Operations, and Efficiency" /><published>2025-02-16T00:00:00+00:00</published><updated>2025-02-16T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2025/02/16/EU-vs-US-electricity-markets/">&lt;p&gt;The European and U.S. electricity markets have evolved with &lt;strong&gt;different regulatory, operational, and market structures&lt;/strong&gt;. This document explores the &lt;strong&gt;intricacies of the EU electricity system&lt;/strong&gt;, detailing &lt;strong&gt;market operations, redispatching, regulatory constraints, and pricing mechanisms&lt;/strong&gt;, followed by a &lt;strong&gt;detailed comparison with the U.S. system&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;the-european-electricity-market-structure-and-operations&quot;&gt;&lt;strong&gt;The European Electricity Market: Structure and Operations&lt;/strong&gt;&lt;/h2&gt;
+
+&lt;h3 id=&quot;market-structure-and-entities&quot;&gt;&lt;strong&gt;Market Structure and Entities&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The European electricity market consists of multiple &lt;strong&gt;independent national Transmission System Operators (TSOs) and Power Exchanges (PXs)&lt;/strong&gt;. Unlike the U.S., where ISOs/RTOs manage both market clearing and grid operations, &lt;strong&gt;Europe separates market trading from grid operations&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;key-market-entities-in-europe&quot;&gt;&lt;strong&gt;Key Market Entities in Europe&lt;/strong&gt;&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Entity&lt;/th&gt;
+      &lt;th&gt;Role&lt;/th&gt;
+      &lt;th&gt;Example&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Power Exchanges (PXs)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Run &lt;strong&gt;day-ahead and intraday markets&lt;/strong&gt;, clear trades&lt;/td&gt;
+      &lt;td&gt;EPEX Spot, Nord Pool, OMIE&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Transmission System Operators (TSOs)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Ensure &lt;strong&gt;grid reliability&lt;/strong&gt;, perform &lt;strong&gt;redispatching&lt;/strong&gt;, manage &lt;strong&gt;cross-border flows&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;RTE (France), TenneT (Germany), National Grid ESO (UK)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Market Coupling Mechanism&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Optimizes cross-border trading&lt;/td&gt;
+      &lt;td&gt;EUPHEMIA Algorithm&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Balancing Market Operators&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Handle &lt;strong&gt;real-time imbalances&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;TSOs &amp;amp; separate BSPs (Balancing Service Providers)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;operations-timeline-in-europe&quot;&gt;&lt;strong&gt;Operations Timeline in Europe&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Stage&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Who Runs It?&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;What Happens?&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Constraints Considered?&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Day-Ahead Market (DAM)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;PXs (EPEX Spot, Nord Pool)&lt;/td&gt;
+      &lt;td&gt;Market clearing &lt;strong&gt;via EUPHEMIA algorithm&lt;/strong&gt;, setting prices&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Cross-border transmission limits only&lt;/strong&gt; (no intra-zone constraints)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Intraday Market (IDM)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;PXs (Continuous &amp;amp; Auction)&lt;/td&gt;
+      &lt;td&gt;Adjustments to trades &lt;strong&gt;closer to real-time&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;No intra-zone constraints&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Redispatching&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;TSOs&lt;/td&gt;
+      &lt;td&gt;Adjust generator schedules &lt;strong&gt;to fix congestion&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Intra-zonal congestion fixed after market clearing&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Balancing Market (Real-Time Dispatch)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;TSOs&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;Correct real-time deviations in generation/load&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;strong&gt;TSOs activate balancing reserves&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&quot;trading-blocks-and-settlement-in-european-balancing-markets&quot;&gt;&lt;strong&gt;Trading Blocks and Settlement in European Balancing Markets&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;The &lt;strong&gt;balancing markets in Europe&lt;/strong&gt; operate with &lt;strong&gt;specific trading blocks and settlement mechanisms&lt;/strong&gt; to ensure real-time stability.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Market Segment&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Timeframe&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Who Participates?&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Payment Structure&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Frequency Containment Reserves (FCR)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Seconds&lt;/td&gt;
+      &lt;td&gt;Pre-qualified generators, demand response&lt;/td&gt;
+      &lt;td&gt;Availability + activation payment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Automatic Frequency Restoration Reserves (aFRR)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;5-15 min&lt;/td&gt;
+      &lt;td&gt;Generators, flexible loads&lt;/td&gt;
+      &lt;td&gt;Capacity payment + energy activation payment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Manual Frequency Restoration Reserves (mFRR)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;15-30 min&lt;/td&gt;
+      &lt;td&gt;Generators, storage, demand response&lt;/td&gt;
+      &lt;td&gt;Bids cleared in merit order + activation payment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Replacement Reserves (RR)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;30+ min&lt;/td&gt;
+      &lt;td&gt;Large-scale power plants, interconnectors&lt;/td&gt;
+      &lt;td&gt;Clearing price mechanism&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;✅ &lt;strong&gt;Balancing markets operate under pre-contracted capacity payments and real-time activation payments.&lt;/strong&gt;&lt;br /&gt;
+✅ &lt;strong&gt;TSOs procure reserves based on system needs, ensuring grid stability.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;redispatching-in-europe-why-it-exists-and-how-it-works&quot;&gt;&lt;strong&gt;Redispatching in Europe: Why It Exists and How It Works&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Europe operates on &lt;strong&gt;zonal pricing&lt;/strong&gt; rather than &lt;strong&gt;nodal pricing&lt;/strong&gt; (used in the U.S.). PXs clear markets &lt;strong&gt;only considering cross-border constraints&lt;/strong&gt;, but &lt;strong&gt;do not account for intra-zonal transmission congestion&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Problem&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Solution in EU (Redispatching)&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Alternative in U.S. (Nodal Pricing)&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Market clearing ignores intra-zone congestion&lt;/td&gt;
+      &lt;td&gt;TSOs redispatch generators post-market clearing&lt;/td&gt;
+      &lt;td&gt;Market clearing &lt;strong&gt;includes all constraints upfront&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Generation schedules may be infeasible&lt;/td&gt;
+      &lt;td&gt;TSOs instruct &lt;strong&gt;some plants to reduce output, others to increase&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Nodal prices &lt;strong&gt;automatically reflect congestion&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Increases costs for consumers&lt;/td&gt;
+      &lt;td&gt;Costs are &lt;strong&gt;socialized via grid tariffs&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Costs are &lt;strong&gt;borne by congestion-causing participants&lt;/strong&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;✅ &lt;strong&gt;Redispatching allows TSOs to fix congestion problems.&lt;/strong&gt;&lt;br /&gt;
+🚨 &lt;strong&gt;It is an extra step that would be unnecessary if nodal pricing was used.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;us-electricity-market-structure-and-efficiency-example-ercot&quot;&gt;&lt;strong&gt;U.S. Electricity Market: Structure and Efficiency (Example: ERCOT)&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;ERCOT (Electric Reliability Council of Texas) operates under a &lt;strong&gt;fully deregulated, real-time market structure&lt;/strong&gt; with no capacity market.&lt;/p&gt;
+
+&lt;h3 id=&quot;trading-blocks-and-settlement-in-ercots-balancing-market&quot;&gt;&lt;strong&gt;Trading Blocks and Settlement in ERCOT’s Balancing Market&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;&lt;strong&gt;Market Segment&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Timeframe&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Who Participates?&lt;/strong&gt;&lt;/th&gt;
+      &lt;th&gt;&lt;strong&gt;Payment Structure&lt;/strong&gt;&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Day-Ahead Market (DAM)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;1 day ahead&lt;/td&gt;
+      &lt;td&gt;Generators, loads, traders&lt;/td&gt;
+      &lt;td&gt;Cleared market price&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Real-Time Market (RTM)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;5-15 min&lt;/td&gt;
+      &lt;td&gt;Online generators, flexible demand&lt;/td&gt;
+      &lt;td&gt;Locational Marginal Pricing (LMP)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Ancillary Services (AS)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;1 hour to real-time&lt;/td&gt;
+      &lt;td&gt;Pre-qualified generators&lt;/td&gt;
+      &lt;td&gt;Availability + deployment payment&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;strong&gt;Fast Frequency Response (FFR)&lt;/strong&gt;&lt;/td&gt;
+      &lt;td&gt;Seconds to minutes&lt;/td&gt;
+      &lt;td&gt;Batteries, demand response&lt;/td&gt;
+      &lt;td&gt;Capacity payment + energy payment&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;✅ &lt;strong&gt;ERCOT does not use a capacity market; instead, it relies on real-time scarcity pricing.&lt;/strong&gt;&lt;br /&gt;
+✅ &lt;strong&gt;All constraints are included in SCUC/SCED, avoiding the need for redispatching.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;&lt;strong&gt;Summary:&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;✅ &lt;strong&gt;Nodal pricing includes transmission constraints, ensuring congestion is priced into LMPs.&lt;/strong&gt;&lt;br /&gt;
+✅ &lt;strong&gt;Market and grid operations are integrated within ISOs, reducing complexity.&lt;/strong&gt;&lt;br /&gt;
+🚨 &lt;strong&gt;Europe relies on redispatching because market clearing does not consider intra-zonal constraints.&lt;/strong&gt;&lt;br /&gt;
+🚨 &lt;strong&gt;Future European reforms may push toward nodal pricing to improve efficiency.&lt;/strong&gt;&lt;/p&gt;</content><author><name>Vinay</name></author><summary type="html">The European and U.S. electricity markets have evolved with different regulatory, operational, and market structures. This document explores the intricacies of the EU electricity system, detailing market operations, redispatching, regulatory constraints, and pricing mechanisms, followed by a detailed comparison with the U.S. system.</summary></entry><entry><title type="html">European and U.S. Electricity Markets: Structure, Operations, and Efficiency</title><link href="https://vinayk94.github.io//dailylog/journal/2025/02/15/EU-vs-US-Elec-Markets/" rel="alternate" type="text/html" title="European and U.S. Electricity Markets: Structure, Operations, and Efficiency" /><published>2025-02-15T00:00:00+00:00</published><updated>2025-02-15T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2025/02/15/EU-vs-US-Elec-Markets</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2025/02/15/EU-vs-US-Elec-Markets/">&lt;p&gt;The European and U.S. electricity markets have evolved with &lt;strong&gt;different regulatory, operational, and market structures&lt;/strong&gt;. This document explores the &lt;strong&gt;intricacies of the EU electricity system&lt;/strong&gt;, detailing &lt;strong&gt;market operations, redispatching, regulatory constraints, and pricing mechanisms&lt;/strong&gt;, followed by a &lt;strong&gt;detailed comparison with the U.S. system&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1252,10 +1465,4 @@ A person like Grigori Perelman is honest with maths and he is a mathematician. &
 
 &lt;p&gt;Generally, a person is more inclined to be honest with his family and that may be the reason, older people stress upon family when asked what’s important in life. It could be that, it’s the real experience that moves us, as it uncovers some unique and mostly true information. We can experience something for real only when we are being honest, Otherwise, we are just trying to imitate the feelings published by others. E.g. trying to experience something at a place just because some one posted it on social media. &lt;br /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Honesty dissolves our ego, which is just an image that we hold of our past, and equips us with least biased lens to look at the current situation.&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Vinay</name></author><summary type="html">Most often, I stumble upon upon the question “what am I ?” Our earlier definition was that it comprises of what we do, what career we get into, what possessions we secure and so on. But, more and more,it occurs to me that, we are what we are honest about. Unless, we are honest about something, we can’t think new, we cant act new, and we are just those, who chose to be clones of others. How can we expect to know the truth of anything, unless we are honest about it ? It goes without saying that finding new information, learning something new, creating something new, requires effort. But, even to make ourselves conducive to effort, we need to be honest with ourselves. I really do not understand a culture, where people are being encouraged to go for the paths which are less effort and offer more return. I just can’t fathom that one could really learn, understand and experience truth, if they didn’t care to put effort into it. I wonder how many lives this culture had been creating, where a person is capped to have a limited set of experiennces in life and worse, they are already predetermined. Can you call it a life if you are on a determined path ? If so, what would you use the fruits of this deterministic life for ? Would you invest that again into a determined investment ? I guess so, because, as you never chose something with uncertainty, you never learn or have the experience /courage to move ahead with less knowledge. If you are participating in this perpetual determinsitic world, what are you doing ? and hence the question WHAT ARE YOU ? Are you a bot, if so for whom ? Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture’s information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?</summary></entry><entry><title type="html">What are your limits that your are fighting now ?</title><link href="https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits/" rel="alternate" type="text/html" title="What are your limits that your are fighting now ?" /><published>2024-03-05T00:00:00+00:00</published><updated>2024-03-05T00:00:00+00:00</updated><id>https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits</id><content type="html" xml:base="https://vinayk94.github.io//dailylog/journal/2024/03/05/what-are-your-limits/">&lt;p&gt;My current limitation is target oriented working. &lt;br /&gt;
-I go awry if I’m not progressing and the deadline is imminnent.&lt;br /&gt;
-I do not know how to handle, when the wagon stops, like how to proceed and etc.&lt;br /&gt;
-I mostly slip into other distractions squandering time. &lt;br /&gt;
-&lt;br /&gt;
-My innerthoughts says to me that, I’m better off working than hurting myself by wasting time.
-That I need to overcome these blocks, but I still cannot handle it.&lt;/p&gt;</content><author><name>Vinay</name></author><summary type="html">My current limitation is target oriented working. I go awry if I’m not progressing and the deadline is imminnent. I do not know how to handle, when the wagon stops, like how to proceed and etc. I mostly slip into other distractions squandering time. My innerthoughts says to me that, I’m better off working than hurting myself by wasting time. That I need to overcome these blocks, but I still cannot handle it.</summary></entry></feed>
+&lt;p&gt;&lt;strong&gt;Honesty dissolves our ego, which is just an image that we hold of our past, and equips us with least biased lens to look at the current situation.&lt;/strong&gt;&lt;br /&gt;&lt;/p&gt;</content><author><name>Vinay</name></author><summary type="html">Most often, I stumble upon upon the question “what am I ?” Our earlier definition was that it comprises of what we do, what career we get into, what possessions we secure and so on. But, more and more,it occurs to me that, we are what we are honest about. Unless, we are honest about something, we can’t think new, we cant act new, and we are just those, who chose to be clones of others. How can we expect to know the truth of anything, unless we are honest about it ? It goes without saying that finding new information, learning something new, creating something new, requires effort. But, even to make ourselves conducive to effort, we need to be honest with ourselves. I really do not understand a culture, where people are being encouraged to go for the paths which are less effort and offer more return. I just can’t fathom that one could really learn, understand and experience truth, if they didn’t care to put effort into it. I wonder how many lives this culture had been creating, where a person is capped to have a limited set of experiennces in life and worse, they are already predetermined. Can you call it a life if you are on a determined path ? If so, what would you use the fruits of this deterministic life for ? Would you invest that again into a determined investment ? I guess so, because, as you never chose something with uncertainty, you never learn or have the experience /courage to move ahead with less knowledge. If you are participating in this perpetual determinsitic world, what are you doing ? and hence the question WHAT ARE YOU ? Are you a bot, if so for whom ? Can a culture add any true information to the world if it lives in a deterministic world ? If we expand, a culture’s information contribution manifests in their value to the world. If we look at the saturated or declining economies of once developed nations, this becomes clearer. They wanted to do things in a deterministic way, looking for security or feelings of others, and hence, could not create something of value to external world in the past decades. They stopped being honest with the true state of their nations, and now it is leading to a question of their existence?</summary></entry></feed>
